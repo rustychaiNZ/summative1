@@ -54,4 +54,8 @@
 	display: block;
 	float: left;
 	cursor: pointer;
+	position: relative;
+}
+#hamburger:hover{
+	color: blue;
 }

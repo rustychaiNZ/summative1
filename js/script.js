@@ -15,4 +15,11 @@ $(document).ready(function() {
 		$('#mobile').toggle('inactive');
 		$('#hamburger').toggle('active');
 	})
+
 });
+
+$(function() {
+	$('#card').on('click', function() {
+		$('.btn__card').addClass('.btn__payment--active');
+	});
+}

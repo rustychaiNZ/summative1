@@ -16,6 +16,22 @@ ul li {
   padding: 0;
 }
 
+p {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+label {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "PT Mono", monospace;
+}
+
+h1 {
+  font-size: 1.2em;
+}
+
 .active {
   display: block;
 }
@@ -64,6 +80,136 @@ ul li {
   display: block;
   float: left;
   cursor: pointer;
+  position: relative;
+}
+
+#hamburger:hover {
+  color: blue;
+}
+
+header {
+  background: #333;
+  width: 100%;
+  padding: 30px;
+}
+header h1 {
+  text-align: center;
+}
+
+.member__block {
+  width: 100%;
+  float: left;
+  display: block;
+  background: whitesmoke;
+  margin: 5px 0;
+  padding: 4%;
+}
+.member__block .member__block--field {
+  margin: 10% 0;
+}
+.member__block .member__block--field .member__text {
+  float: right;
+  width: 100%;
+  font-size: 1.1em;
+}
+.member__block .member__block--field textarea {
+  height: 80px;
+}
+.member__block .member__subscription {
+  margin: 10% 0;
+}
+.member__block .member__subscription .member__radio {
+  float: right;
+}
+.member__block .member__subscription .member__checkbox {
+  float: right;
+}
+.member__block .member__payment {
+  margin: 8% 0;
+}
+.member__block .member__payment .member__label {
+  float: left;
+  display: block;
+  width: 100%;
+}
+.member__block .member__payment .member__text {
+  float: right;
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+}
+.member__block .member__payment .member__text--mnth {
+  width: 24.99%;
+  float: left;
+}
+.member__block .member__payment .member__text--year {
+  width: 24.99%;
+  margin-left: 5px;
+  float: left;
+}
+.member__block .member__payment .member__label--cvc {
+  float: right;
+  text-align: right;
+  width: 100%;
+}
+.member__block .member__payment .member__text--cvc {
+  float: right;
+  width: 33.32%;
+}
+.member__block .btn {
+  width: 45.815%;
+  padding: 4%;
+  margin: 5px;
+  background: grey;
+}
+.member__block .btn p {
+  text-align: center;
+}
+.member__block .btn__payment--active {
+  background: darkslategrey;
+}
+.member__block .btn__payment--active p {
+  color: white;
+}
+.member__block .btn__card {
+  float: left;
+  display: block;
+}
+.member__block .btn__d-debit {
+  float: right;
+  display: block;
+}
+.member__block .btn__paypal {
+  display: inline-block;
+}
+.member__block .member__payment--exp {
+  float: left;
+  width: 49.98%;
+}
+.member__block .member__submit--btn {
+  width: 83.3%;
+  padding: 10px 5px;
+  background: #333;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.member__block .member__submit--btn p {
+  color: white;
+  margin: auto;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+.member__block .member__submit--btn:hover {
+  background: blue;
+}
+.member__block .member__submit--btn:hover p {
+  color: black;
+}
+.member__block #selectable .ui-selected {
+  background: #F39814;
+  color: white;
 }
 
 .test {
@@ -71,25 +217,6 @@ ul li {
   background: darkslategrey;
   width: 15%;
   margin: auto;
-}
-
-.member__submit--btn {
-  height: 50px;
-  width: 150px;
-  padding: auto;
-  background: #333;
-  display: block;
-}
-.member__submit--btn p {
-  color: white;
-  margin: auto;
-}
-
-.center-verticle {
-  display: flex;
-  align-self: auto;
-  align-items: center;
-  background: red;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,133 @@
+.member__block{
+	width: $spancol;
+	float: left;
+	display: block;
+	background: whitesmoke;
+	margin: 5px 0;
+	padding: $dPad;
+
+	.member__block--field{
+		margin: 2.5*$dMar 0;
+
+		.member__text{
+			float: right;
+			width: $spancol;
+			font-size: 1.1em;
+		}
+		textarea{
+			height: 80px;
+		}
+	}
+
+// -------- Subscription and activites
+	.member__subscription{
+		margin: 2.5*$dMar 0;
+
+		.member__radio{
+			float: right;
+		}
+
+		.member__checkbox{
+			float: right;
+		}
+	}
+
+	.member__payment{
+		margin: 2*$dMar 0;
+
+		.member__label{
+			float: left;
+			display: block;
+			width: $spancol;
+		}
+
+		.member__text{
+			float: right;
+			display: block;
+			width: $spancol;
+			margin: 5px 0;
+		}
+
+		.member__text--mnth{
+			width: 3*$col;
+			float: left;
+		}
+
+		.member__text--year{
+			width: 3*$col;
+			margin-left: 5px;
+			float: left;
+		}
+
+		.member__label--cvc{
+			float: right;
+			text-align: right;
+			width: $spancol;
+		}
+
+		.member__text--cvc{
+			float: right;
+			width: 4*$col;
+		}
+	}
+
+	.btn{
+		width: 5.5*$col;
+		padding: $dPad;
+		margin: 5px;
+		background: grey;
+		p{
+			text-align: center;
+		}
+	}
+	.btn__payment--active{
+		background: darkslategrey;
+		p{
+			color: white;
+		}
+	}
+
+	.btn__card{
+		float: left;
+		display: block;
+	}
+	.btn__d-debit{
+		float: right;
+		display: block;
+	}
+	.btn__paypal{
+		display: inline-block;
+	}
+
+	.member__payment--exp{
+		float: left;
+		width: 6*$col;
+	}
+	
+	.member__submit--btn{
+		width: 10*$col;
+		padding: 10px 5px;
+		background: #333;
+		display: block;
+		margin: auto;
+		cursor: pointer;
+		border-radius: 15px;
+		p{
+			color: white;
+			margin: auto;
+			text-align: center;
+			font-family: $emphasisFont;
+		}
+	}
+
+	.member__submit--btn:hover{
+		background: blue;
+		p{
+			color: black;
+		}
+	}
+	#selectable .ui-selected{ 
+		background: #F39814; 
+		color: white;
+	}
+}

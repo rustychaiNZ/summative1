@@ -2,15 +2,17 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<title>GOPI | Join Us</title>
-	<meta name="author" content="Russell">
-	<meta name="description" content="description here">
-	<meta name="keywords" content="keywords,here">
-	<link rel="shortcut icon" href="../assets/logo.png" type="image/vnd.microsoft.icon">
-	<link rel="stylesheet" href="../css/style.css" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Nunito|PT+Mono&display=swap" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<meta name="author" content="Russell">
+		<meta name="description" content="description here">
+		<meta name="keywords" content="keywords,here">
+		<link rel="shortcut icon" href="../assets/logo.png" type="image/vnd.microsoft.icon">
+		<link rel="stylesheet" href="../css/style.css" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Nunito|PT+Mono&display=swap" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	</head>
 	<body>
 		
@@ -82,8 +84,8 @@
 							</div>
 							<!-- Address -->
 							<div class="member__block--field">
-								<label for="address" class="member__label">Address</label>
-								<textarea type="textarea" id="address" class="member__address" placeholder="Type your address here"></textarea>
+								<label for="address" class="member__label">Address:</label>
+								<textarea type="textarea" id="address" class="member__address member__text" placeholder="Type your address here"></textarea>
 							</div>
 							<!-- Email -->
 							<div class="member__block--field">
@@ -188,23 +190,23 @@
 							<h3>Payment Details</h3>
 							<p class="member__text--description">Please select your payment option</p>
 							<!-- button containers -->
-							<div class="member__payment--btn">
+							<div class="member__payment">
 								<!-- Credit or debit card -->
-								<span class="btn btn__payment--active">
+								<span class="btn btn__payment btn__card" id="card">
 									<p>Credit/Debit Card</p>
 								</span>
 								<!-- Direct Debit -->
-								<span class="btn btn__payment--inactive">
+								<span class="btn btn__payment--inactive btn__payment btn__d-debit" id="ddbt">
 									<p>Direct Debit</p>
 								</span>
 								<!-- PayPal -->
-								<span class="btn btn__payment--inactive">
+								<span class="btn btn__payment--inactive btn__payment btn__paypal" id="paypal">
 									<p>PayPal</p>
 								</span>
 							</div>
 
 							<!-- Card details -->
-							<div class="member__payment--field active" id="cardDetails">
+							<div class="member__payment active" id="cardDetails">
 
 								<label for="card-number" class="member__label">Card Number:</label>
 
@@ -214,16 +216,20 @@
 
 								<input type="text" name="card-name" id="noc" class="member__text member__text--card">
 
-								<div class="member__payment--exp-date">
+								<div class="member__payment member__payment--exp">
 
 									<label for="experation-date" class="member__label">Experation Date</label>
-									<input type="text" name="month" class="member__text member__text--card" placeholder="month">
-									<input type="text" name="year" class="member__text member__text--card" placeholder="Year">
+									<input type="text" name="month" class="member__text member__text--mnth" placeholder="Month">
+									<input type="text" name="year" class="member__text member__text--year" placeholder="Year">
 
 								</div>
 
-								<label for="card-cvc" class="member__label">CVC</label>
-								<input type="text" name="card-cvc" id="cvc" class="member__text member__text--card">
+								<div class="member__payment member__payment--exp">
+
+									<label for="card-cvc" class="member__label--cvc">CVC</label>
+									<input type="text" name="card-cvc" id="cvc" class="member__text member__text--cvc">
+
+								</div>
 
 							</div>
 						</div>
@@ -231,13 +237,9 @@
 						<!-- Submit button -->
 						<div class="member__block">
 
-							<a href="#">
 								<span class="member__submit--btn">
-									<div class="center-verticle">
-										<p>Submit</p>
-									</div>
+									<p>Submit</p>
 								</span>
-							</a>
 
 						</div>
 
