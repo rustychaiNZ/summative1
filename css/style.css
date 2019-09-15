@@ -1,38 +1,76 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 ul {
   list-style: none;
   padding: 0;
-  margin: 0; }
-  ul li {
-    text-decoration: none;
-    text-indent: 0;
-    list-style-type: 0;
-    padding: 0; }
+  margin: 0;
+}
+ul li {
+  text-decoration: none;
+  text-indent: 0;
+  list-style-type: 0;
+  padding: 0;
+}
+
+#desktop {
+  background-color: #333;
+  width: 20.825%;
+  max-width: 300px;
+  z-index: 50;
+  position: sticky;
+  float: left;
+  top: 5;
+  left: 0;
+  font-family: "Nunito", sans-serif;
+}
+#desktop .highlighted {
+  background: orange;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+#desktop ul a {
+  text-decoration: none;
+  color: white;
+  display: inline;
+}
+#desktop ul a li {
+  text-align: left;
+  padding: 20px;
+}
+#desktop ul a li:hover {
+  background: yellow;
+  color: black;
+}
 
 .test {
   height: 15vh;
   background: darkslategrey;
   width: 15%;
-  margin: auto; }
+  margin: auto;
+}
 
 .member__submit--btn {
   height: 50px;
   width: 150px;
   padding: auto;
   background: #333;
-  display: block; }
-  .member__submit--btn p {
-    color: white;
-    margin: auto; }
+  display: block;
+}
+.member__submit--btn p {
+  color: white;
+  margin: auto;
+}
 
 .center-verticle {
   display: flex;
   align-self: auto;
   align-items: center;
-  background: red; }
+  background: red;
+}
 
 /*# sourceMappingURL=style.css.map */
