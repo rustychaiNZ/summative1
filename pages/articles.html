@@ -3,12 +3,14 @@
 	<head>
 		<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>GOPI|Home</title>
+		<title>GOPI | Articles</title>
 	<meta name="author" content="Russell">
 	<meta name="description" content="description here">
 	<meta name="keywords" content="keywords,here">
-	<link rel="shortcut icon" href="assets/logo.png" type="image/vnd.microsoft.icon">
+	<link rel="shortcut icon" href="../assets/logo.png" type="image/vnd.microsoft.icon">
 	<link rel="stylesheet" href="../css/style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lexend+Deca|Nunito|PT+Mono&display=swap" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	</head>
 	<body>
 		
@@ -22,6 +24,18 @@
 				<!-- Div containing hamburger menu -->
 				<div class="head__menu">
 					
+					<div class="head__menu--container">
+						<i class="fa fa-bars hamburger" id="hamburger" aria-hidden="true"></i>
+					</div>
+					<nav id="mobile">
+						<ul>
+							<a href="../index.html"><li>Home</li></a>
+							<a href="#"><li>Educational Resources</li></a>
+							<a href="articles.html"><li>Articles</li></a>
+							<a href="joinUs.html"><li class="highlighted">Join Us</li></a>
+							<a href="#"><li class="highlighted">Donations</li></a>
+						</ul>
+					</nav>
 				</div>
 
 				<!-- Title of the site -->
@@ -147,9 +161,10 @@
 			
 		</div>
 
+		<script type="text/javascript" src="../js/script.js"></script>
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script type="text/javascript" src="../js/script.js"></script>
+		<script src="https://use.fontawesome.com/ade6d32d48.js"></script>
 
 	</body>
 </html>

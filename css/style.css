@@ -16,7 +16,11 @@ ul li {
   padding: 0;
 }
 
-#desktop {
+.active {
+  display: block;
+}
+
+#desktop, #mobile {
   background-color: #333;
   width: 20.825%;
   max-width: 300px;
@@ -26,25 +30,40 @@ ul li {
   top: 5;
   left: 0;
   font-family: "Nunito", sans-serif;
+  display: none;
 }
-#desktop .highlighted {
+#desktop .highlighted, #mobile .highlighted {
   background: orange;
   padding: 10px;
   margin-bottom: 15px;
   text-align: center;
 }
-#desktop ul a {
+#desktop ul a, #mobile ul a {
   text-decoration: none;
   color: white;
   display: inline;
 }
-#desktop ul a li {
+#desktop ul a li, #mobile ul a li {
   text-align: left;
   padding: 20px;
 }
-#desktop ul a li:hover {
+#desktop ul a li:hover, #mobile ul a li:hover {
   background: yellow;
   color: black;
+}
+
+#mobile {
+  width: 66.64%;
+  max-width: 100%;
+  position: absolute;
+}
+
+#hamburger {
+  font-size: 50px;
+  color: red;
+  display: block;
+  float: left;
+  cursor: pointer;
 }
 
 .test {
