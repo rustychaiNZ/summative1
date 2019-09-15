@@ -39,9 +39,182 @@
 
 					<h2>Join Us</h2>
 
-					<div class="jus__block">
-						<img src="">
-					</div>
+					<!-- Form starts -->
+					<form class="member__block--form">
+						<!-- Article featured image -->
+						<div class="member__block">
+							<img src="">
+						</div>
+						<!-- Name Label and fields -->
+						<div class="member__block">
+							<h3>Member Details</h3>
+							<!-- container for label and field|Name -->
+							<div class="member__block--field">
+								<label for="name" class="member__label">Name:</label>
+								<input type="text" id="name" class="member__text member__text--name">
+							</div>
+							<!-- Address -->
+							<div class="member__block--field">
+								<label for="address" class="member__label">Address</label>
+								<textarea type="textarea" id="address" class="member__address" placeholder="Type your address here"></textarea>
+							</div>
+							<!-- Email -->
+							<div class="member__block--field">
+								<label for="email" class="member__label">Email:</label>
+								<input type="text" name="email" class="member__text member__text--email">
+							</div>
+							<!-- Phone Number -->
+							<div class="member__block--field">
+								<label for="phone" class="member__label">Phone:</label>
+								<input type="text" name="phone" class="member__text member__text--phone">
+							</div>
+						</div>
+
+						<!-- Subscription label and fields -->
+						<div class="member__block">
+							<h3>Subscription</h3>
+							<p class="member__text--description">How long would you like to be a member of The Guardians of P&amacr;uatahnui Inlet?</p>
+							<!-- Membership select field -->
+							<div class="member__block--field">
+								<!-- 1 year subscription option -->
+								<div class="member__subscription">
+									<!-- Label for the radio button -->
+									<label for="subscription" class="member__label--subscription">1 Year Individual - $12</label>
+									<!-- The radio Selct button -->
+									<input type="radio" name="subscription" id="1yi" class="member__radio">
+								</div>
+								<!-- 5 year subscription option -->
+								<div class="member__subscription">
+									<!-- Label for the radio button -->
+									<label for="subscription" class="member__label--subscription">5 Year Individual - $50</label>
+									<!-- The radio select button -->
+									<input type="radio" name="subscription" id="5yi" class="member__radio">
+								</div>
+								<!-- 1 year subscription option for Family -->
+								<div class="member__subscription">
+									<!-- Label for the radio button -->
+									<label for="subscription" class="member__label--subscription">1 Year Family - $15</label>
+									<!-- The radio select button -->
+									<input type="radio" name="subscription" id="1yf" class="member__radio">
+								</div>
+								<!-- 5 year subscription option for family -->
+								<div class="member__subscription">
+									<!-- Label for the radio button -->
+									<label for="subscription" class="member__label--subscription">5 Year Famlily - $50</label>
+									<!-- The radio select button -->
+									<input type="radio" name="subscription" id="5yf" class="member__radio">
+								</div>
+							</div>
+						</div>
+
+						<!-- Activities labels and fields -->
+						<div class="member__block">
+							<h3>Activities</h3>
+							<p class="member__text--description">What activities do you want us to let you konw about?</p>
+							<!-- Activities fields -->
+							<div class="member__block--field">
+								<!-- annual cleanup -->
+								<div class="member__subscription">
+									<!-- Label for the radio button -->
+									<label for="annual-clean-up-day" class="member__label--subscription">Annual clean-up day</label>
+									<!-- the radio select button -->
+									<input type="checkbox" name="annual-clean-up-day" id="acd" class="member__checkbox"> 
+								</div>
+								<!-- Three-yearly cockle survey -->
+								<div class="member__subscription">
+									<!-- Label for the radio button -->
+									<label for="three-yearly-cockle-survey" class="member__label--subscription">Three-yearly cockle survey</label>
+									<!-- the radio select button -->
+									<input type="checkbox" name="three-yearly-cockle-survey" id="tcs" class="member__checkbox">
+								</div>
+
+								<!-- Website and making video clips -->
+								<div class="member__subscription">
+									<!-- Label for the radio button -->
+									<label for="website-and-making-video-clips" class="member__label--subscription">Website and making video clips</label>
+									<!-- the radio select button -->
+									<input type="checkbox" name="website-and-making-video-clips" id="wamvc" class="member__checkbox">
+								</div>
+
+								<!-- Submissions to local bodies -->
+								<div class="member__subscription">
+									<!-- label for the radio button-->
+									<label for="submissions-to-local-bodies" class="member__label--subscription">Submissions to local bodies</label>
+									<!-- The radio select button -->
+									<input type="checkbox" name="submissions-to-local-bodies" id="stlb" class="member__checkbox">
+								</div>
+
+								<!-- Eductional programmes for schools -->
+								<div class="member__subscription">
+									<!-- Label for the radio button -->
+									<label for="educational-programmes-for-schools" class="member__label--subscription">Educational programmes for schools</label>
+									<!-- The radio select button -->
+									<input type="checkbox" name="educational-programmes-for-schools" id="epfs" class="member__checkbox">
+								</div>
+
+							</div>
+
+						</div>
+
+						<!-- Payment details -->
+						<div class="member__block">
+							<h3>Payment Details</h3>
+							<p class="member__text--description">Please select your payment option</p>
+							<!-- button containers -->
+							<div class="member__payment--btn">
+								<!-- Credit or debit card -->
+								<span class="btn btn__payment--active">
+									<p>Credit/Debit Card</p>
+								</span>
+								<!-- Direct Debit -->
+								<span class="btn btn__payment--inactive">
+									<p>Direct Debit</p>
+								</span>
+								<!-- PayPal -->
+								<span class="btn btn__payment--inactive">
+									<p>PayPal</p>
+								</span>
+							</div>
+
+							<!-- Card details -->
+							<div class="member__payment--field active" id="cardDetails">
+
+								<label for="card-number" class="member__label">Card Number:</label>
+
+								<input type="text" name="card-number" id="cn" class="member__text member__text--card">
+
+								<label for="card-name" class="member__label">Name on Card:</label>
+
+								<input type="text" name="card-name" id="noc" class="member__text member__text--card">
+
+								<div class="member__payment--exp-date">
+
+									<label for="experation-date" class="member__label">Experation Date</label>
+									<input type="text" name="month" class="member__text member__text--card" placeholder="month">
+									<input type="text" name="year" class="member__text member__text--card" placeholder="Year">
+
+								</div>
+
+								<label for="card-cvc" class="member__label">CVC</label>
+								<input type="text" name="card-cvc" id="cvc" class="member__text member__text--card">
+
+							</div>
+						</div>
+
+						<!-- Submit button -->
+						<div class="member__block">
+
+							<a href="#">
+								<span class="member__submit--btn">
+									<div class="center-verticle">
+										<p>Submit</p>
+									</div>
+								</span>
+							</a>
+
+						</div>
+
+					</form>
 					
 				</div>
 
@@ -53,6 +226,10 @@
 			</footer>
 			
 		</div>
+
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<script type="text/javascript" src="../js/script.js"></script>
 
 	</body>
 </html>
