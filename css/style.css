@@ -23,19 +23,47 @@ a {
 
 p {
   font-family: "Lexend Deca", sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  color: #333;
+  margin: 10px 0;
 }
 
 label {
   font-family: "Lexend Deca", sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: "PT Mono", monospace;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #333;
 }
 
 h1 {
-  font-size: 1.1em;
-  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5em;
+  font-weight: 1000;
+  color: whitesmoke;
+  text-align: right;
+}
+
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #333;
+  padding: 4%;
+}
+
+h3 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #333;
+}
+
+h4 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #333;
 }
 
 .active {
@@ -51,7 +79,7 @@ h1 {
   float: left;
   top: 5;
   left: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "PT Mono", monospace;
   display: none;
 }
 #desktop .highlighted, #mobile .highlighted {
@@ -102,8 +130,86 @@ header {
   width: 100%;
   padding: 30px;
 }
-header h1 {
+
+.section {
+  background: lightgrey;
+}
+.section .section__article {
+  padding: 4%;
+}
+
+.btn-link {
+  width: 66.64%;
+  padding: 15px 5px;
+  background: #333;
+  display: block;
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 10px auto;
+}
+.btn-link p {
+  color: white;
+  margin: auto;
   text-align: center;
+  font-family: "PT Mono", monospace;
+}
+
+.btn-link:hover {
+  background: red;
+  color: blue;
+}
+
+.section__articles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.section__articles .article__container {
+  background: white;
+  width: 83.3%;
+  margin: 10px auto;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+.section__articles .article__container .article__container--btn {
+  width: 16.66%;
+  float: left;
+  border-top: 2px solid black;
+}
+.section__articles .article__container .article__container--btn .article__btn {
+  margin-top: 30px;
+  padding: 5px;
+  background-color: black;
+  display: block;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 8px;
+}
+.section__articles .article__container .article__container--btn .article__btn p {
+  font-family: "PT Mono", monospace;
+  color: white;
+  margin: 0;
+}
+.section__articles .article__container .article__container--btn .article__btn:hover {
+  background: grey;
+}
+.section__articles .article__container .article__container--btn .article__btn:hover p {
+  color: #333;
+}
+.section__articles .article__container .article__container--text {
+  padding: 2%;
+  width: 83.3%;
+  float: left;
+  border-top: 2px solid black;
+}
+.section__articles .article__container .article__container--text p {
+  margin: 0;
+}
+.section__articles .article__container p {
+  margin: 10px;
+}
+.section__articles p {
+  margin: 10px 0;
 }
 
 .member__block {
@@ -162,13 +268,14 @@ header h1 {
   float: right;
   width: 45.815%;
 }
-.member__block .btn {
+.member__block .btn__payment {
   width: 45.815%;
   padding: 4%;
   margin: 5px;
   background: grey;
+  border-radius: 5px;
 }
-.member__block .btn p {
+.member__block .btn__payment p {
   text-align: center;
 }
 .member__block .btn__payment--active {
@@ -204,7 +311,7 @@ header h1 {
   color: white;
   margin: auto;
   text-align: center;
-  font-family: "Nunito", sans-serif;
+  font-family: "PT Mono", monospace;
 }
 .member__block .member__submit--btn:hover {
   background: blue;
@@ -296,6 +403,21 @@ header h1 {
   background: darkslategrey;
   width: 15%;
   margin: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .section__articles .article__container {
+    width: 45.815%;
+  }
+  .section__articles h1 {
+    font-size: 2.5em;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .section__articles .article__container {
+    width: 29.155%;
+    max-width: 450px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

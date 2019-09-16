@@ -66,11 +66,12 @@
 		}
 	}
 
-	.btn{
+	.btn__payment{
 		width: 5.5*$col;
 		padding: $dPad;
 		margin: 5px;
 		background: grey;
+		border-radius: 5px;
 		p{
 			text-align: center;
 		}

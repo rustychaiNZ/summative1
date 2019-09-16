@@ -1,8 +1,94 @@
+// Sections
 header{
 	background: #333;
 	width: $spancol;
 	padding: 30px;
-	h1{
+}
+.section{
+	background: $sectionColor;
+
+	.section__article{
+		padding: $dPad;
+	}
+}
+
+
+// Generic buttons
+.btn-link{
+	width: 8*$col;
+	padding: 15px 5px;
+	background: #333;
+	display: block;
+	cursor: pointer;
+	border-radius: 15px;
+	margin: 10px auto;
+	p{
+		color: white;
+		margin: auto;
 		text-align: center;
+		font-family: $emphasisFont;
+	}
+}
+.btn-link:hover{
+	background: red;
+	color: blue;
+}
+
+.section__articles{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	.article__container{
+		background: white;
+		width: 10*$col;
+		margin: 10px auto;
+		border: 2px solid black;
+		border-radius: 8px;
+
+		.article__container--btn{
+			width: 2*$col;
+			float: left;
+			border-top: 2px solid black;
+
+			.article__btn{
+				margin-top: 30px;
+				padding: 5px;
+				background-color: black;
+				display: block;
+				text-align: center;
+				margin-right: 5px;
+				border-radius: 8px;
+
+				p{
+					font-family: $emphasisFont;
+					color: white;
+					margin: 0;
+				}
+			}
+			.article__btn:hover{
+				background: grey;
+
+				p{
+					color: #333;
+				}
+			}
+		}
+		.article__container--text{
+			padding: 0.5*$dPad;
+			width: 10*$col;
+			float: left;
+			border-top: 2px solid black;
+			
+			p{
+				margin: 0;
+			}
+		}
+		p{
+			margin: 10px;
+		}
+	}
+	p{
+	margin: 10px 0;
 	}
 }

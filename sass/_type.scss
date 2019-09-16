@@ -1,16 +1,23 @@
-
+// mixin for type: font-family, font-size, font-weight, font-color
 p{
-	font-family: $paraFont;
+	@include text-style($paraFont, 1em, 400, #333);
+	margin: 10px 0;
 }
 
 label{
-	font-family: $paraFont;
+	@include text-style($paraFont, 1.1em, 500, #333);
 }
-h1, h2, h3, h4, h5, h6{
-	font-family: $headingFont;
-}
-
 h1{
-	font-size: 1.1em;
-	color: white;
+	@include text-style($headingFont, 1.5em, 1000, whitesmoke);
+	text-align: right;
+}
+h2{
+	@include text-style($headingFont, 1.5em, 600, #333);
+	padding: $dPad;
+}
+h3{
+	@include text-style($headingFont, 1.2em, 600, #333);
+}
+h4{
+	@include text-style($headingFont, 1.2em, 500, #333);
 }
