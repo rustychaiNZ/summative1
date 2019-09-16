@@ -196,11 +196,11 @@
 									<p>Credit/Debit Card</p>
 								</span>
 								<!-- Direct Debit -->
-								<span class="btn btn__payment--inactive btn__payment btn__d-debit" id="ddbt">
+								<span class="btn btn__payment btn__d-debit" id="ddbt">
 									<p>Direct Debit</p>
 								</span>
 								<!-- PayPal -->
-								<span class="btn btn__payment--inactive btn__payment btn__paypal" id="paypal">
+								<span class="btn btn__payment btn__paypal" id="pp">
 									<p>PayPal</p>
 								</span>
 							</div>
@@ -231,12 +231,23 @@
 
 								</div>
 							</div>
+
+							<!-- Direct Debit -->
+							<div class="member__payment hidden" id="directDebit">
+								<p>Currently under construction. Direct debit functionality will be added in the future</p>
+							</div>
+
+							<!-- PayPal -->
+							<div class="member__payment hidden" id="paypal">
+								<p>Currently under construction. PayPal functionality will be added in the near future</p>
+							</div>
+
 						</div>
 
 						<!-- Submit button -->
 						<div class="member__block">
 
-								<span class="member__submit--btn">
+								<span type="submit" value="submit" class="member__submit--btn" id="submit">
 									<p>Submit</p>
 								</span>
 
@@ -246,6 +257,26 @@
 					
 				</div>
 
+			</div>
+			<!-- Popup menu that opens after completeing form -->
+			<div id="confirmation" class="dialog" title="Thank you for Registering">
+				<div class="confirmation__content">
+					<!-- Header containing closing x and title -->
+					<div class="confirmation__header">
+						<span class="close">&times;</span>
+						<h2>Thank You For Registering!</h2>
+					</div>
+					<div class="confirmation__body">
+						<p>Thank you for registering with Guardians of P&amacr;uatahnui Inlet. We look forward to seeing you in future meetings and at future events. We will email you with details now.</p>
+					</div>
+					<div class="confirmation__footer">
+						<a href="../index.html">
+							<span>
+								<p>Back Home</p>
+							</span>
+						</a>
+					</div>
+				</div>
 			</div>
 
 			<!-- Footer of the website -->

@@ -6,16 +6,18 @@
 	margin: 5px 0;
 	padding: $dPad;
 	
+	.member__text{
+		float: right;
+		display: block;
+		width: $spancol;
+		margin: 5px 0;
+		font-size: 1.5em;
+		}
+
 	.member__block--field{
 		margin: 2.5*$dMar 0;
-
-		.member__text{
-			float: right;
-			width: $spancol;
-			font-size: 1.1em;
-		}
 		textarea{
-			height: 80px;
+			height: 90px;
 		}
 	}
 
@@ -41,21 +43,13 @@
 			width: $spancol;
 		}
 
-		.member__text{
-			float: right;
-			display: block;
-			width: $spancol;
-			margin: 5px 0;
-			font-size: 1.1em;
-		}
-
 		.member__text--mnth{
-			width: 3.5*$col;
+			width: 5*$col;
 			float: left;
 		}
 
 		.member__text--year{
-			width: 3.5*$col;
+			width: 5*$col;
 			margin-left: 5px;
 			float: left;
 		}
@@ -68,7 +62,7 @@
 
 		.member__text--cvc{
 			float: right;
-			width: 4*$col;
+			width: 5.5*$col;
 		}
 	}
 
@@ -132,4 +126,76 @@
 }
 .hidden{
 	display: none;
+}
+
+// Pop up confirmation box
+.dialog{
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: $spancol; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	p{
+		
+	}
+	h2{
+		color: white;
+		font-size: 1.3em;
+	}
+
+	.confirmation__content{
+		position: relative;
+		background-color: #fefefe;
+		margin: auto;
+		padding: 0;
+		border: 1px solid #888;
+		width: 80%;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+		.confirmation__header{
+			padding: 2px 16px;
+			background-color: #5cb85c;
+			color: white;
+
+			/* The Close Button */
+			.close {
+				color: white;
+				float: right;
+				font-size: 28px;
+				font-weight: bold;
+			}
+
+			.close:hover, .close:focus {
+				color: #000;
+				text-decoration: none;
+				cursor: pointer;
+			}
+		}
+
+		.confirmation__body{
+			padding: 15px 16px;
+			background: white;
+		}
+		
+		.confirmation__footer{
+			padding: 15px 16px;
+			background: #5cb85c;
+
+			span{
+				width: 8*$col;
+				padding: 6px;
+				background: white;
+				display: block;
+				text-align: center;
+				margin: auto;
+				border-radius: 15px;
+			}
+		}
+	}
 }

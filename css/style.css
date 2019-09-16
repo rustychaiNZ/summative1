@@ -16,6 +16,11 @@ ul li {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 p {
   font-family: "Lexend Deca", sans-serif;
 }
@@ -29,7 +34,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 1.2em;
+  font-size: 1.1em;
+  color: white;
 }
 
 .active {
@@ -72,15 +78,19 @@ h1 {
   width: 66.64%;
   max-width: 100%;
   position: absolute;
+  top: 0;
+  box-shadow: 8px 7px 15px black;
 }
 
 #hamburger {
-  font-size: 50px;
+  font-size: 2em;
   color: red;
   display: block;
   float: left;
   cursor: pointer;
-  position: relative;
+  position: absolute;
+  top: 25px;
+  left: 10px;
 }
 
 #hamburger:hover {
@@ -104,16 +114,18 @@ header h1 {
   margin: 5px 0;
   padding: 4%;
 }
+.member__block .member__text {
+  float: right;
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  font-size: 1.5em;
+}
 .member__block .member__block--field {
   margin: 10% 0;
 }
-.member__block .member__block--field .member__text {
-  float: right;
-  width: 100%;
-  font-size: 1.1em;
-}
 .member__block .member__block--field textarea {
-  height: 80px;
+  height: 90px;
 }
 .member__block .member__subscription {
   margin: 10% 0;
@@ -132,19 +144,12 @@ header h1 {
   display: block;
   width: 100%;
 }
-.member__block .member__payment .member__text {
-  float: right;
-  display: block;
-  width: 100%;
-  margin: 5px 0;
-  font-size: 1.1em;
-}
 .member__block .member__payment .member__text--mnth {
-  width: 29.155%;
+  width: 41.65%;
   float: left;
 }
 .member__block .member__payment .member__text--year {
-  width: 29.155%;
+  width: 41.65%;
   margin-left: 5px;
   float: left;
 }
@@ -155,7 +160,7 @@ header h1 {
 }
 .member__block .member__payment .member__text--cvc {
   float: right;
-  width: 33.32%;
+  width: 45.815%;
 }
 .member__block .btn {
   width: 45.815%;
@@ -214,6 +219,76 @@ header h1 {
 
 .hidden {
   display: none;
+}
+
+.dialog {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+.dialog h2 {
+  color: white;
+  font-size: 1.3em;
+}
+.dialog .confirmation__content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dialog .confirmation__content .confirmation__header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+  /* The Close Button */
+}
+.dialog .confirmation__content .confirmation__header .close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.dialog .confirmation__content .confirmation__header .close:hover, .dialog .confirmation__content .confirmation__header .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dialog .confirmation__content .confirmation__body {
+  padding: 15px 16px;
+  background: white;
+}
+.dialog .confirmation__content .confirmation__footer {
+  padding: 15px 16px;
+  background: #5cb85c;
+}
+.dialog .confirmation__content .confirmation__footer span {
+  width: 66.64%;
+  padding: 6px;
+  background: white;
+  display: block;
+  text-align: center;
+  margin: auto;
+  border-radius: 15px;
 }
 
 .test {

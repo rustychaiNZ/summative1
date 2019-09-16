@@ -46,15 +46,19 @@
 	width: 8*$col;
 	max-width: 100%;
 	position: absolute;
+	top: 0;
+	box-shadow: 8px 7px 15px black;
 }
 
 #hamburger{
-	font-size: 50px;
+	font-size: 2em;
 	color: red;
 	display: block;
 	float: left;
 	cursor: pointer;
-	position: relative;
+	position: absolute;
+	top: 25px;
+	left: 10px;
 }
 #hamburger:hover{
 	color: blue;
