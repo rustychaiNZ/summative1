@@ -137,13 +137,14 @@ header h1 {
   display: block;
   width: 100%;
   margin: 5px 0;
+  font-size: 1.1em;
 }
 .member__block .member__payment .member__text--mnth {
-  width: 24.99%;
+  width: 29.155%;
   float: left;
 }
 .member__block .member__payment .member__text--year {
-  width: 24.99%;
+  width: 29.155%;
   margin-left: 5px;
   float: left;
 }
@@ -173,7 +174,6 @@ header h1 {
 }
 .member__block .btn__card {
   float: left;
-  display: block;
 }
 .member__block .btn__d-debit {
   float: right;
@@ -210,6 +210,10 @@ header h1 {
 .member__block #selectable .ui-selected {
   background: #F39814;
   color: white;
+}
+
+.hidden {
+  display: none;
 }
 
 .test {

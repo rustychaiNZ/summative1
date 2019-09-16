@@ -5,7 +5,7 @@
 	background: whitesmoke;
 	margin: 5px 0;
 	padding: $dPad;
-
+	
 	.member__block--field{
 		margin: 2.5*$dMar 0;
 
@@ -46,15 +46,16 @@
 			display: block;
 			width: $spancol;
 			margin: 5px 0;
+			font-size: 1.1em;
 		}
 
 		.member__text--mnth{
-			width: 3*$col;
+			width: 3.5*$col;
 			float: left;
 		}
 
 		.member__text--year{
-			width: 3*$col;
+			width: 3.5*$col;
 			margin-left: 5px;
 			float: left;
 		}
@@ -89,7 +90,6 @@
 
 	.btn__card{
 		float: left;
-		display: block;
 	}
 	.btn__d-debit{
 		float: right;
@@ -98,7 +98,6 @@
 	.btn__paypal{
 		display: inline-block;
 	}
-
 	.member__payment--exp{
 		float: left;
 		width: 6*$col;
@@ -130,4 +129,7 @@
 		background: #F39814; 
 		color: white;
 	}
+}
+.hidden{
+	display: none;
 }

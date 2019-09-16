@@ -19,7 +19,12 @@ $(document).ready(function() {
 });
 
 $(function() {
-	$('#card').on('click', function() {
-		$('.btn__card').addClass('.btn__payment--active');
+	$('#card').click(function() {
+		$('#card').addClass('btn__payment--active');
+		// After the button has been pressed, reveals fields
+		$('#cardDetails').addClass('active')
+
+		// Removes the hidden element
+		$('#cardDetails').removeClass('hidden')
 	});
-}
+});
