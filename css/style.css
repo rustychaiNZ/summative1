@@ -36,6 +36,20 @@ label {
   color: #333;
 }
 
+input {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.3em;
+  font-weight: 100;
+  color: #333;
+}
+
+textarea {
+  font-family: "PT Mono", monospace;
+  font-size: 1.1em;
+  font-weight: 100;
+  color: #333;
+}
+
 h1 {
   font-family: "Nunito", sans-serif;
   font-size: 1.5em;
@@ -46,15 +60,15 @@ h1 {
 
 h2 {
   font-family: "Nunito", sans-serif;
-  font-size: 1.5em;
-  font-weight: 600;
+  font-size: 1.8em;
+  font-weight: 1000;
   color: #333;
-  padding: 4%;
+  padding: 4% 4% 0 4%;
 }
 
 h3 {
   font-family: "Nunito", sans-serif;
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 600;
   color: #333;
 }
@@ -133,89 +147,60 @@ header {
 
 .section {
   background: lightgrey;
+  padding-bottom: 25px;
 }
-.section .section__article {
+.section .section__articles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stetch;
+}
+.section .section__articles p {
+  margin: 10px 0;
+}
+.section .section__articles .section__article--text {
+  width: 100%;
   padding: 4%;
 }
+.section .section__articles .section__article--text p {
+  padding: 10px 0;
+}
+.section .section__image {
+  width: 100%;
+  display: block;
+  float: left;
+  margin: 10px 0;
+}
+.section .section__image img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
 
-.btn-link {
+.btn__link {
   width: 66.64%;
   padding: 15px 5px;
   background: #333;
   display: block;
   cursor: pointer;
   border-radius: 15px;
-  margin: 10px auto;
+  margin: 10px auto 0 auto;
 }
-.btn-link p {
+.btn__link p {
   color: white;
   margin: auto;
   text-align: center;
   font-family: "PT Mono", monospace;
 }
 
-.btn-link:hover {
+.btn__link:hover {
   background: red;
   color: blue;
 }
 
-.section__articles {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.section__articles .article__container {
-  background: white;
-  width: 83.3%;
-  margin: 10px auto;
-  border: 2px solid black;
-  border-radius: 8px;
-}
-.section__articles .article__container .article__container--btn {
-  width: 16.66%;
-  float: left;
-  border-top: 2px solid black;
-}
-.section__articles .article__container .article__container--btn .article__btn {
-  margin-top: 30px;
-  padding: 5px;
-  background-color: black;
-  display: block;
-  text-align: center;
-  margin-right: 5px;
-  border-radius: 8px;
-}
-.section__articles .article__container .article__container--btn .article__btn p {
-  font-family: "PT Mono", monospace;
-  color: white;
-  margin: 0;
-}
-.section__articles .article__container .article__container--btn .article__btn:hover {
-  background: grey;
-}
-.section__articles .article__container .article__container--btn .article__btn:hover p {
-  color: #333;
-}
-.section__articles .article__container .article__container--text {
-  padding: 2%;
-  width: 83.3%;
-  float: left;
-  border-top: 2px solid black;
-}
-.section__articles .article__container .article__container--text p {
-  margin: 0;
-}
-.section__articles .article__container p {
-  margin: 10px;
-}
-.section__articles p {
-  margin: 10px 0;
-}
-
 .member__block {
   width: 100%;
-  float: left;
-  display: block;
   background: whitesmoke;
   margin: 5px 0;
   padding: 4%;
@@ -225,13 +210,21 @@ header {
   display: block;
   width: 100%;
   margin: 5px 0;
-  font-size: 1.5em;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: lightgrey;
 }
 .member__block .member__block--field {
   margin: 10% 0;
+  font-family: "Lexend Deca", sans-serif;
 }
 .member__block .member__block--field textarea {
   height: 90px;
+}
+.member__block .member__image {
+  width: 33.32%;
+  margin: auto;
+  display: block;
 }
 .member__block .member__subscription {
   margin: 10% 0;
@@ -278,8 +271,14 @@ header {
 .member__block .btn__payment p {
   text-align: center;
 }
+.member__block .btn__payment:hover {
+  background-color: darkslategrey;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px #404040;
+}
 .member__block .btn__payment--active {
   background: darkslategrey;
+  box-shadow: 4px 4px 10px #404040;
 }
 .member__block .btn__payment--active p {
   color: white;
@@ -353,6 +352,7 @@ header {
 .dialog h2 {
   color: white;
   font-size: 1.3em;
+  margin-bottom: 4%;
 }
 .dialog .confirmation__content {
   position: relative;
@@ -361,7 +361,7 @@ header {
   padding: 0;
   border: 1px solid #888;
   width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 4px 4px 10px #404040;
 }
 .dialog .confirmation__content .confirmation__header {
   padding: 2px 16px;
@@ -398,6 +398,61 @@ header {
   border-radius: 15px;
 }
 
+.article__container {
+  background: white;
+  width: 83.3%;
+  margin: 10px auto;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+.article__container .article__container--btn {
+  width: 16.66%;
+  float: left;
+  border-top: 2px solid black;
+}
+.article__container .article__container--btn .article__btn {
+  margin-top: 30px;
+  padding: 5px;
+  background-color: black;
+  display: block;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 8px;
+}
+.article__container .article__container--btn .article__btn p {
+  font-family: "PT Mono", monospace;
+  color: white;
+  margin: 0;
+}
+.article__container .article__container--btn .article__btn:hover {
+  background: grey;
+}
+.article__container .article__container--btn .article__btn:hover p {
+  color: #333;
+}
+.article__container .article__container--text {
+  padding: 2%;
+  width: 83.3%;
+  float: left;
+  border-top: 2px solid black;
+}
+.article__container .article__container--text p {
+  margin: 0;
+}
+.article__container .article__container--image {
+  height: 20vh;
+}
+
+.article__container:hover {
+  box-shadow: 4px 4px 10px #404040;
+}
+
+#imageThreat {
+  background-image: url("../assets/threats_dogOnShore.jpg");
+  background-position: center;
+  background-size: 100%;
+}
+
 .test {
   height: 15vh;
   background: darkslategrey;
@@ -411,6 +466,19 @@ header {
   }
   .section__articles h1 {
     font-size: 2.5em;
+  }
+
+  .member__block {
+    width: 49.98%;
+    padding: 10px auto;
+    margin: auto;
+  }
+  .member__block .btn__payment {
+    width: 100%;
+    margin: 8px auto;
+  }
+  .member__block .member__submit--btn {
+    margin: 0 auto;
   }
 }
 @media only screen and (min-width: 1024px) {

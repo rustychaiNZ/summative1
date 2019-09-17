@@ -7,16 +7,22 @@ p{
 label{
 	@include text-style($paraFont, 1.1em, 500, #333);
 }
+input{
+	@include text-style($paraFont, 1.3em, 100, #333);
+}
+textarea{
+	@include text-style($emphasisFont, 1.1em, 100, #333)
+}
 h1{
 	@include text-style($headingFont, 1.5em, 1000, whitesmoke);
 	text-align: right;
 }
 h2{
-	@include text-style($headingFont, 1.5em, 600, #333);
-	padding: $dPad;
+	@include text-style($headingFont, 1.8em, 1000, #333);
+	padding: $dPad $dPad 0 $dPad;
 }
 h3{
-	@include text-style($headingFont, 1.2em, 600, #333);
+	@include text-style($headingFont, 1.4em, 600, #333);
 }
 h4{
 	@include text-style($headingFont, 1.2em, 500, #333);

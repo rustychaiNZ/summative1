@@ -1,7 +1,7 @@
 .member__block{
 	width: $spancol;
-	float: left;
-	display: block;
+	// float: left;
+	// display: block;
 	background: whitesmoke;
 	margin: 5px 0;
 	padding: $dPad;
@@ -11,15 +11,23 @@
 		display: block;
 		width: $spancol;
 		margin: 5px 0;
-		font-size: 1.5em;
-		}
-
+		border: 1px solid black;
+		border-radius: 5px;
+		background-color: lightgrey;
+	}
 	.member__block--field{
 		margin: 2.5*$dMar 0;
+		font-family: $paraFont;
 		textarea{
 			height: 90px;
 		}
 	}
+	.member__image{
+		width: 4*$col;
+		margin: auto;
+		display: block;
+	}
+		
 
 // -------- Subscription and activites
 	.member__subscription{
@@ -76,8 +84,14 @@
 			text-align: center;
 		}
 	}
+	.btn__payment:hover{
+		background-color: darkslategrey;
+		cursor: pointer;
+		box-shadow: $shadow;
+	}
 	.btn__payment--active{
 		background: darkslategrey;
+		box-shadow: $shadow;
 		p{
 			color: white;
 		}
@@ -142,12 +156,10 @@
 	overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0,0,0); /* Fallback color */
 	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-	p{
-		
-	}
 	h2{
 		color: white;
 		font-size: 1.3em;
+		margin-bottom: $dPad;
 	}
 
 	.confirmation__content{
@@ -157,7 +169,7 @@
 		padding: 0;
 		border: 1px solid #888;
 		width: 80%;
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+		box-shadow: $shadow;
 
 		.confirmation__header{
 			padding: 2px 16px;
