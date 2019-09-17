@@ -1,10 +1,9 @@
 .member__block{
 	width: $spancol;
-	// float: left;
-	// display: block;
 	background: whitesmoke;
 	margin: 5px 0;
 	padding: $dPad;
+	align-self: stretch;
 	
 	.member__text{
 		float: right;
@@ -18,6 +17,7 @@
 	.member__block--field{
 		margin: 2.5*$dMar 0;
 		font-family: $paraFont;
+
 		textarea{
 			height: 90px;
 		}
@@ -27,8 +27,6 @@
 		margin: auto;
 		display: block;
 	}
-		
-
 // -------- Subscription and activites
 	.member__subscription{
 		margin: 2.5*$dMar 0;
@@ -73,7 +71,6 @@
 			width: 5.5*$col;
 		}
 	}
-
 	.btn__payment{
 		width: 5.5*$col;
 		padding: $dPad;
@@ -96,9 +93,9 @@
 			color: white;
 		}
 	}
-
 	.btn__card{
 		float: left;
+		display: block;
 	}
 	.btn__d-debit{
 		float: right;
@@ -137,6 +134,15 @@
 	#selectable .ui-selected{ 
 		background: #F39814; 
 		color: white;
+	}
+}
+.section{		
+	.section__articles{
+		.member__block{
+			p{
+				padding: 0;
+			}
+		}
 	}
 }
 .hidden{

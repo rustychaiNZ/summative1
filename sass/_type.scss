@@ -19,7 +19,7 @@ h1{
 }
 h2{
 	@include text-style($headingFont, 1.8em, 1000, #333);
-	padding: $dPad $dPad 0 $dPad;
+	// padding: $dPad $dPad 0 $dPad;
 }
 h3{
 	@include text-style($headingFont, 1.4em, 600, #333);

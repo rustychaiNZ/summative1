@@ -63,7 +63,6 @@ h2 {
   font-size: 1.8em;
   font-weight: 1000;
   color: #333;
-  padding: 4% 4% 0 4%;
 }
 
 h3 {
@@ -147,17 +146,19 @@ header {
 
 .section {
   background: lightgrey;
-  padding-bottom: 25px;
+  padding: 0 4% 25px 4%;
 }
 .section .section__articles {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stetch;
+  align-items: flex-start;
+  align-content: stretch;
 }
 .section .section__articles p {
   margin: 10px 0;
+  padding: 0 4%;
 }
 .section .section__articles .section__article--text {
   width: 100%;
@@ -165,6 +166,7 @@ header {
 }
 .section .section__articles .section__article--text p {
   padding: 10px 0;
+  margin: 0 4%;
 }
 .section .section__image {
   width: 100%;
@@ -185,7 +187,7 @@ header {
   display: block;
   cursor: pointer;
   border-radius: 15px;
-  margin: 10px auto 0 auto;
+  margin: 10px auto 10px auto;
 }
 .btn__link p {
   color: white;
@@ -199,11 +201,67 @@ header {
   color: blue;
 }
 
+.article__container {
+  background: white;
+  width: 83.3%;
+  margin: 10px auto;
+  border: 2px solid black;
+  border-radius: 8px;
+}
+.article__container .article__container--btn {
+  width: 16.66%;
+  float: left;
+  border-top: 2px solid black;
+}
+.article__container .article__container--btn .article__btn {
+  margin-top: 35px;
+  padding: 5px;
+  background-color: black;
+  display: block;
+  text-align: center;
+  margin-right: 5px;
+  border-radius: 8px;
+}
+.article__container .article__container--btn .article__btn p {
+  font-family: "PT Mono", monospace;
+  color: white;
+  margin: 0;
+}
+.article__container .article__container--btn .article__btn:hover {
+  background: grey;
+}
+.article__container .article__container--btn .article__btn:hover p {
+  color: #333;
+}
+.article__container .article__container--text {
+  padding: 2%;
+  width: 83.3%;
+  float: left;
+  border-top: 2px solid black;
+}
+.article__container .article__container--text p {
+  margin: 0;
+}
+.article__container .article__container--image {
+  height: 20vh;
+}
+
+.article__container:hover {
+  box-shadow: 4px 4px 10px #404040;
+}
+
+#imageThreat {
+  background-image: url("../assets/threats_dogOnShore.jpg");
+  background-position: center;
+  background-size: 100%;
+}
+
 .member__block {
   width: 100%;
   background: whitesmoke;
   margin: 5px 0;
   padding: 4%;
+  align-self: stretch;
 }
 .member__block .member__text {
   float: right;
@@ -285,6 +343,7 @@ header {
 }
 .member__block .btn__card {
   float: left;
+  display: block;
 }
 .member__block .btn__d-debit {
   float: right;
@@ -321,6 +380,10 @@ header {
 .member__block #selectable .ui-selected {
   background: #F39814;
   color: white;
+}
+
+.section .section__articles .member__block p {
+  padding: 0;
 }
 
 .hidden {
@@ -398,61 +461,6 @@ header {
   border-radius: 15px;
 }
 
-.article__container {
-  background: white;
-  width: 83.3%;
-  margin: 10px auto;
-  border: 2px solid black;
-  border-radius: 8px;
-}
-.article__container .article__container--btn {
-  width: 16.66%;
-  float: left;
-  border-top: 2px solid black;
-}
-.article__container .article__container--btn .article__btn {
-  margin-top: 30px;
-  padding: 5px;
-  background-color: black;
-  display: block;
-  text-align: center;
-  margin-right: 5px;
-  border-radius: 8px;
-}
-.article__container .article__container--btn .article__btn p {
-  font-family: "PT Mono", monospace;
-  color: white;
-  margin: 0;
-}
-.article__container .article__container--btn .article__btn:hover {
-  background: grey;
-}
-.article__container .article__container--btn .article__btn:hover p {
-  color: #333;
-}
-.article__container .article__container--text {
-  padding: 2%;
-  width: 83.3%;
-  float: left;
-  border-top: 2px solid black;
-}
-.article__container .article__container--text p {
-  margin: 0;
-}
-.article__container .article__container--image {
-  height: 20vh;
-}
-
-.article__container:hover {
-  box-shadow: 4px 4px 10px #404040;
-}
-
-#imageThreat {
-  background-image: url("../assets/threats_dogOnShore.jpg");
-  background-position: center;
-  background-size: 100%;
-}
-
 .test {
   height: 15vh;
   background: darkslategrey;
@@ -467,18 +475,19 @@ header {
   .section__articles h1 {
     font-size: 2.5em;
   }
-
-  .member__block {
+  .section__articles .member__block {
     width: 49.98%;
-    padding: 10px auto;
     margin: auto;
   }
-  .member__block .btn__payment {
+  .section__articles .member__block .btn__payment {
     width: 100%;
-    margin: 8px auto;
+    float: none;
   }
-  .member__block .member__submit--btn {
+  .section__articles .member__block .member__submit--btn {
     margin: 0 auto;
+  }
+  .section__articles .member__block .member__image {
+    width: 49.98%;
   }
 }
 @media only screen and (min-width: 1024px) {
