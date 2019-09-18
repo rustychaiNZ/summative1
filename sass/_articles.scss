@@ -6,48 +6,55 @@
 	border: 2px solid black;
 	border-radius: 8px;
 	
-	.article__container--btn{
-		width: 2*$col;
-		float: left;
-		border-top: 2px solid black;
-		
-		.article__btn{
-			margin-top: 35px;
-			padding: 5px;
-			background-color: black;
-			display: block;
-			text-align: center;
-			margin-right: 5px;
-			border-radius: 8px;
-			
-			p{
-				font-family: $emphasisFont;
-				color: white;
-				margin: 0;
-			}
-		}
-		.article__btn:hover{
-			background: grey;
-			
-			p{
-				color: #333;
-			}
-		}
+	a{
+		text-decoration: none;
 	}
-	.article__container--text{
-		padding: 0.5*$dPad;
-		width: 10*$col;
-		float: left;
-		border-top: 2px solid black;
+}
+
+.article__container--btn{
+	width: 2*$col;
+	float: left;
+	border-top: 2px solid black;
+	
+	.article__btn{
+		margin-top: 35px;
+		padding: 5px;
+		background-color: black;
+		display: block;
+		text-align: center;
+		margin-right: 5px;
+		border-radius: 8px;
 		
 		p{
+			font-family: $emphasisFont;
+			color: white;
 			margin: 0;
 		}
 	}
-	.article__container--image{
-		height: 20vh;
+	.article__btn:hover{
+		background: grey;
+		
+		p{
+			color: #333;
+		}
 	}
 }
+
+.article__container--text{
+	padding: 0.5*$dPad;
+	width: 10*$col;
+	float: left;
+	border-top: 2px solid black;
+	
+	p{
+		margin: 0;
+	}
+}
+
+.article__container--image{
+	height: 20vh;
+}
+
 .article__container:hover{
 	box-shadow: $shadow;
 }

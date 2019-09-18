@@ -60,25 +60,45 @@
 	}
 
 	.section__articles{
+		max-width: 1250px;
+		margin-left: auto;
 
 		.article__container{
 			width: 3.5*$col;
 			max-width: 450px;
 		}
 	}
+	.section__span--index{
+		width: 50%;
+	}
+	.article__container--text{
+		width: $spancol;
+	}
+	.article__container--btn{
+		width: $spancol;
+		float: none;
+		border: 0;
+		margin: 10px auto;
+		display: inline-block;
+
+		.article__btn{
+			width: 10*$col;
+			margin: auto;
+		}
+	}
 
 	.section{
 		width: 9.5*$col;
 		margin-left: auto;
-		
+		max-width: 1250px;
 	}
 	
 	// Article-images
 	#exampleOfThreats{
-		width: 8*$col;
+		width: 10*$col;
 	}
 	#sedimentation{
-		width: 5*$col;
+		width: 8*$col;
 	}
 	// Navigation
 	#desktop{

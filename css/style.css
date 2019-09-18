@@ -141,42 +141,60 @@ h4 {
   color: blue;
 }
 
+.page {
+  min-height: 100vh;
+  background: #62c3d9;
+}
+
 header {
-  background: #333;
+  background: #0368a6;
   width: 100%;
   padding: 30px;
 }
 
 .section {
-  background: lightgrey;
   padding: 0 0 25px 0;
-}
-.section .section__articles {
+  background: #d8ebf2;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   align-content: stretch;
+  margin-right: auto;
 }
-.section .section__articles p {
+.section a {
+  color: blue;
+}
+
+.section__articles p {
   margin: 10px 0;
 }
-.section .section__articles .section__article--text {
+
+.section__span {
+  width: 100%;
+}
+
+.section__span--index {
+  width: 100%;
+}
+
+.section__article--text {
   width: 100%;
   padding: 4%;
 }
-.section .section__articles .section__article--text p {
+.section__article--text p {
   padding: 10px 0;
   margin: 0 4%;
 }
-.section .section__image {
+
+.section__image {
   width: 100%;
   display: block;
   float: left;
   margin: 10px 0;
 }
-.section .section__image img {
+.section__image img {
   width: 100%;
   display: block;
   margin: auto;
@@ -203,6 +221,10 @@ header {
   color: blue;
 }
 
+.hidden {
+  display: none;
+}
+
 .article__container {
   background: white;
   width: 83.3%;
@@ -210,12 +232,16 @@ header {
   border: 2px solid black;
   border-radius: 8px;
 }
-.article__container .article__container--btn {
+.article__container a {
+  text-decoration: none;
+}
+
+.article__container--btn {
   width: 16.66%;
   float: left;
   border-top: 2px solid black;
 }
-.article__container .article__container--btn .article__btn {
+.article__container--btn .article__btn {
   margin-top: 35px;
   padding: 5px;
   background-color: black;
@@ -224,27 +250,29 @@ header {
   margin-right: 5px;
   border-radius: 8px;
 }
-.article__container .article__container--btn .article__btn p {
+.article__container--btn .article__btn p {
   font-family: "PT Mono", monospace;
   color: white;
   margin: 0;
 }
-.article__container .article__container--btn .article__btn:hover {
+.article__container--btn .article__btn:hover {
   background: grey;
 }
-.article__container .article__container--btn .article__btn:hover p {
+.article__container--btn .article__btn:hover p {
   color: #333;
 }
-.article__container .article__container--text {
+
+.article__container--text {
   padding: 2%;
   width: 83.3%;
   float: left;
   border-top: 2px solid black;
 }
-.article__container .article__container--text p {
+.article__container--text p {
   margin: 0;
 }
-.article__container .article__container--image {
+
+.article__container--image {
   height: 20vh;
 }
 
@@ -253,7 +281,7 @@ header {
 }
 
 .article__section {
-  background-color: lightgrey;
+  background-color: #d8ebf2;
 }
 
 .article__image {
@@ -271,7 +299,7 @@ header {
 #imageThreat {
   background-image: url("../assets/threats_dogOnShore.jpg");
   background-position: center;
-  background-size: 100%;
+  background-size: 200%;
 }
 
 .member__block {
@@ -281,7 +309,8 @@ header {
   padding: 4%;
   align-self: stretch;
 }
-.member__block .member__text {
+
+.member__text {
   float: right;
   display: block;
   width: 100%;
@@ -290,90 +319,102 @@ header {
   border-radius: 5px;
   background-color: lightgrey;
 }
-.member__block .member__block--field {
+
+.member__block--field {
   margin: 10% 0;
 }
-.member__block .member__block--field textarea {
+.member__block--field textarea {
   height: 90px;
 }
-.member__block .member__image {
+
+.member__image {
   width: 33.32%;
   margin: auto;
   display: block;
 }
-.member__block .member__subscription {
+
+.member__subscription {
   margin: 10% 0;
 }
-.member__block .member__subscription .member__radio {
+.member__subscription .member__radio {
   float: right;
 }
-.member__block .member__subscription .member__checkbox {
+.member__subscription .member__checkbox {
   float: right;
 }
-.member__block .member__payment {
+
+.member__payment {
   margin: 8% 0;
 }
-.member__block .member__payment .member__label {
+.member__payment .member__label {
   float: left;
   display: block;
   width: 100%;
 }
-.member__block .member__payment .member__text--mnth {
+.member__payment .member__text--mnth {
   width: 41.65%;
   float: left;
 }
-.member__block .member__payment .member__text--year {
+.member__payment .member__text--year {
   width: 41.65%;
   margin-left: 5px;
   float: left;
 }
-.member__block .member__payment .member__label--cvc {
+.member__payment .member__label--cvc {
   float: right;
   text-align: right;
   width: 100%;
 }
-.member__block .member__payment .member__text--cvc {
+.member__payment .member__text--cvc {
   float: right;
   width: 45.815%;
 }
-.member__block .btn__payment {
+
+.btn__payment {
   width: 45.815%;
   padding: 4%;
   margin: 5px;
   background: grey;
   border-radius: 5px;
 }
-.member__block .btn__payment p {
+.btn__payment p {
   text-align: center;
 }
-.member__block .btn__payment:hover {
+
+.btn__payment:hover {
   background-color: darkslategrey;
   cursor: pointer;
   box-shadow: 4px 4px 10px #404040;
 }
-.member__block .btn__payment--active {
+
+.btn__payment--active {
   background: darkslategrey;
   box-shadow: 4px 4px 10px #404040;
 }
-.member__block .btn__payment--active p {
+.btn__payment--active p {
   color: white;
 }
-.member__block .btn__card {
+
+.btn__card {
   float: left;
   display: block;
 }
-.member__block .btn__d-debit {
+
+.btn__d-debit {
   float: right;
   display: block;
 }
-.member__block .btn__paypal {
+
+.btn__paypal {
   display: inline-block;
 }
-.member__block .member__payment--exp {
+
+.member__payment--exp {
   float: left;
   width: 49.98%;
 }
-.member__block .member__submit--btn {
+
+.member__submit--btn {
   width: 83.3%;
   padding: 10px 5px;
   background: #333;
@@ -382,29 +423,27 @@ header {
   cursor: pointer;
   border-radius: 15px;
 }
-.member__block .member__submit--btn p {
+.member__submit--btn p {
   color: white;
   margin: auto;
   text-align: center;
   font-family: "PT Mono", monospace;
 }
-.member__block .member__submit--btn:hover {
+
+.member__submit--btn:hover {
   background: blue;
 }
-.member__block .member__submit--btn:hover p {
+.member__submit--btn:hover p {
   color: black;
 }
-.member__block #selectable .ui-selected {
+
+#selectable .ui-selected {
   background: #F39814;
   color: white;
 }
 
-.section .section__articles .member__block p {
+.member__block p {
   padding: 0;
-}
-
-.hidden {
-  display: none;
 }
 
 .dialog {
@@ -540,22 +579,47 @@ header {
     font-size: 1.5em;
   }
 
+  .section__articles {
+    max-width: 1250px;
+    margin-left: auto;
+  }
   .section__articles .article__container {
     width: 29.155%;
     max-width: 450px;
   }
 
+  .section__span--index {
+    width: 50%;
+  }
+
+  .article__container--text {
+    width: 100%;
+  }
+
+  .article__container--btn {
+    width: 100%;
+    float: none;
+    border: 0;
+    margin: 10px auto;
+    display: inline-block;
+  }
+  .article__container--btn .article__btn {
+    width: 83.3%;
+    margin: auto;
+  }
+
   .section {
     width: 79.135%;
     margin-left: auto;
+    max-width: 1250px;
   }
 
   #exampleOfThreats {
-    width: 66.64%;
+    width: 83.3%;
   }
 
   #sedimentation {
-    width: 41.65%;
+    width: 66.64%;
   }
 
   #desktop, #mobile {

@@ -4,148 +4,156 @@
 	margin: 5px 0;
 	padding: $dPad;
 	align-self: stretch;
-	
-	.member__text{
+}
+
+.member__text{
+	float: right;
+	display: block;
+	width: $spancol;
+	margin: 5px 0;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: lightgrey;
+}
+
+.member__block--field{
+	margin: 2.5*$dMar 0;
+
+	textarea{
+		height: 90px;
+	}
+}
+
+.member__image{
+	width: 4*$col;
+	margin: auto;
+	display: block;
+}
+
+// -------- Subscription and activites
+.member__subscription{
+	margin: 2.5*$dMar 0;
+
+	.member__radio{
 		float: right;
+	}
+
+	.member__checkbox{
+		float: right;
+	}
+}
+
+.member__payment{
+	margin: 2*$dMar 0;
+
+	.member__label{
+		float: left;
 		display: block;
 		width: $spancol;
-		margin: 5px 0;
-		border: 1px solid black;
-		border-radius: 5px;
-		background-color: lightgrey;
-	}
-	.member__block--field{
-		margin: 2.5*$dMar 0;
-
-		textarea{
-			height: 90px;
-		}
-	}
-	.member__image{
-		width: 4*$col;
-		margin: auto;
-		display: block;
-	}
-// -------- Subscription and activites
-	.member__subscription{
-		margin: 2.5*$dMar 0;
-
-		.member__radio{
-			float: right;
-		}
-
-		.member__checkbox{
-			float: right;
-		}
 	}
 
-	.member__payment{
-		margin: 2*$dMar 0;
-
-		.member__label{
-			float: left;
-			display: block;
-			width: $spancol;
-		}
-
-		.member__text--mnth{
-			width: 5*$col;
-			float: left;
-		}
-
-		.member__text--year{
-			width: 5*$col;
-			margin-left: 5px;
-			float: left;
-		}
-
-		.member__label--cvc{
-			float: right;
-			text-align: right;
-			width: $spancol;
-		}
-
-		.member__text--cvc{
-			float: right;
-			width: 5.5*$col;
-		}
-	}
-	.btn__payment{
-		width: 5.5*$col;
-		padding: $dPad;
-		margin: 5px;
-		background: grey;
-		border-radius: 5px;
-		p{
-			text-align: center;
-		}
-	}
-	.btn__payment:hover{
-		background-color: darkslategrey;
-		cursor: pointer;
-		box-shadow: $shadow;
-	}
-	.btn__payment--active{
-		background: darkslategrey;
-		box-shadow: $shadow;
-		p{
-			color: white;
-		}
-	}
-	.btn__card{
+	.member__text--mnth{
+		width: 5*$col;
 		float: left;
-		display: block;
 	}
-	.btn__d-debit{
+
+	.member__text--year{
+		width: 5*$col;
+		margin-left: 5px;
+		float: left;
+	}
+
+	.member__label--cvc{
 		float: right;
-		display: block;
-	}
-	.btn__paypal{
-		display: inline-block;
-	}
-	.member__payment--exp{
-		float: left;
-		width: 6*$col;
-	}
-	
-	.member__submit--btn{
-		width: 10*$col;
-		padding: 10px 5px;
-		background: #333;
-		display: block;
-		margin: auto;
-		cursor: pointer;
-		border-radius: 15px;
-		p{
-			color: white;
-			margin: auto;
-			text-align: center;
-			font-family: $emphasisFont;
-		}
+		text-align: right;
+		width: $spancol;
 	}
 
-	.member__submit--btn:hover{
-		background: blue;
-		p{
-			color: black;
-		}
+	.member__text--cvc{
+		float: right;
+		width: 5.5*$col;
 	}
-	#selectable .ui-selected{ 
-		background: #F39814; 
+}
+
+.btn__payment{
+	width: 5.5*$col;
+	padding: $dPad;
+	margin: 5px;
+	background: grey;
+	border-radius: 5px;
+	p{
+		text-align: center;
+	}
+}
+
+.btn__payment:hover{
+	background-color: darkslategrey;
+	cursor: pointer;
+	box-shadow: $shadow;
+}
+
+.btn__payment--active{
+	background: darkslategrey;
+	box-shadow: $shadow;
+	p{
 		color: white;
 	}
 }
-.section{		
-	.section__articles{
-		.member__block{
-			p{
-				padding: 0;
-			}
-		}
+
+.btn__card{
+	float: left;
+	display: block;
+}
+
+.btn__d-debit{
+	float: right;
+	display: block;
+}
+
+.btn__paypal{
+	display: inline-block;
+}
+
+.member__payment--exp{
+	float: left;
+	width: 6*$col;
+}
+
+.member__submit--btn{
+	width: 10*$col;
+	padding: 10px 5px;
+	background: #333;
+	display: block;
+	margin: auto;
+	cursor: pointer;
+	border-radius: 15px;
+
+	p{
+		color: white;
+		margin: auto;
+		text-align: center;
+		font-family: $emphasisFont;
 	}
 }
-.hidden{
-	display: none;
+
+.member__submit--btn:hover{
+	background: blue;
+	
+	p{
+		color: black;
+	}
+}
+
+#selectable .ui-selected{ 
+	background: #F39814; 
+	color: white;
+}
+		
+.member__block{
+
+	p{
+		padding: 0;
+	}
 }
 
 // Pop up confirmation box

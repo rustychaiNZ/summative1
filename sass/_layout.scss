@@ -1,35 +1,52 @@
 // Sections
+.page{
+	min-height: 100vh;
+	// overflow: auto;
+	background: $siteBack;
+}
+
 header{
-	background: #333;
+	background: $primaryColor;
 	width: $spancol;
 	padding: 30px;
 }
-.section{
-	background: $sectionColor;
+.section{	
 	padding: 0 0 25px 0;
+	background: $sectionColor;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+	margin-right: auto;
 
-	.section__articles{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-		align-content: stretch;
-
-		p{
-			margin: 10px 0;
-			// padding: 0;
-		}
-		.section__article--text{
-			width: $spancol;
-			padding: $dPad;
-
-			p{
-				padding: 10px 0;
-				margin: 0 $dPad;
-			}
-		}
+	a{
+		color: $linkColor;
 	}
+}
+.section__articles{
+	
+
+	p{
+		margin: 10px 0;
+		// padding: 0;
+	}
+}
+.section__span{
+	width: 100%;
+}
+.section__span--index{
+	width: 100%;
+}
+.section__article--text{
+	width: $spancol;
+	padding: $dPad;
+	p{
+		padding: 10px 0;
+		margin: 0 $dPad;
+	}
+}
 	.section__image{
 		width: $spancol;
 		display: block;
@@ -42,7 +59,6 @@ header{
 			margin: auto;
 		}
 	}
-}
 
 
 // Generic buttons
@@ -64,4 +80,8 @@ header{
 .btn__link:hover{
 	background: red;
 	color: blue;
+}
+
+.hidden{
+	display: none;
 }
