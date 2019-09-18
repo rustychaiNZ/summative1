@@ -51,3 +51,19 @@
 .article__container:hover{
 	box-shadow: $shadow;
 }
+
+.article__section{
+	background-color: $sectionColor;
+}
+.article__image{
+		width: $spancol;
+		display: block;
+		float: left;
+		margin: 10px 0;
+
+		img{
+			width: $spancol;
+			display: block;
+			margin: auto;
+		}
+	}

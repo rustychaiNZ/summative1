@@ -27,6 +27,7 @@ p {
   font-weight: 400;
   color: #333;
   margin: 10px 0;
+  padding: 0 4%;
 }
 
 label {
@@ -37,7 +38,7 @@ label {
 }
 
 input {
-  font-family: "Lexend Deca", sans-serif;
+  font-family: "PT Mono", monospace;
   font-size: 1.3em;
   font-weight: 100;
   color: #333;
@@ -63,6 +64,7 @@ h2 {
   font-size: 1.8em;
   font-weight: 1000;
   color: #333;
+  padding: 0 4%;
 }
 
 h3 {
@@ -70,6 +72,7 @@ h3 {
   font-size: 1.4em;
   font-weight: 600;
   color: #333;
+  padding: 0 4%;
 }
 
 h4 {
@@ -90,7 +93,7 @@ h4 {
   z-index: 50;
   position: sticky;
   float: left;
-  top: 5;
+  top: 25px;
   left: 0;
   font-family: "PT Mono", monospace;
   display: none;
@@ -146,19 +149,18 @@ header {
 
 .section {
   background: lightgrey;
-  padding: 0 4% 25px 4%;
+  padding: 0 0 25px 0;
 }
 .section .section__articles {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   align-content: stretch;
 }
 .section .section__articles p {
   margin: 10px 0;
-  padding: 0 4%;
 }
 .section .section__articles .section__article--text {
   width: 100%;
@@ -182,7 +184,7 @@ header {
 
 .btn__link {
   width: 66.64%;
-  padding: 15px 5px;
+  padding: 10px 5px;
   background: #333;
   display: block;
   cursor: pointer;
@@ -250,6 +252,22 @@ header {
   box-shadow: 4px 4px 10px #404040;
 }
 
+.article__section {
+  background-color: lightgrey;
+}
+
+.article__image {
+  width: 100%;
+  display: block;
+  float: left;
+  margin: 10px 0;
+}
+.article__image img {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
 #imageThreat {
   background-image: url("../assets/threats_dogOnShore.jpg");
   background-position: center;
@@ -274,7 +292,6 @@ header {
 }
 .member__block .member__block--field {
   margin: 10% 0;
-  font-family: "Lexend Deca", sans-serif;
 }
 .member__block .member__block--field textarea {
   height: 90px;
@@ -395,9 +412,9 @@ header {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 99;
   /* Sit on top */
-  padding-top: 100px;
+  padding-top: 10%;
   /* Location of the box */
   left: 0;
   top: 0;
@@ -424,6 +441,7 @@ header {
   padding: 0;
   border: 1px solid #888;
   width: 80%;
+  max-width: 500px;
   box-shadow: 4px 4px 10px #404040;
 }
 .dialog .confirmation__content .confirmation__header {
@@ -444,14 +462,14 @@ header {
   cursor: pointer;
 }
 .dialog .confirmation__content .confirmation__body {
-  padding: 15px 16px;
+  padding: 10px 10px;
   background: white;
 }
 .dialog .confirmation__content .confirmation__footer {
   padding: 15px 16px;
   background: #5cb85c;
 }
-.dialog .confirmation__content .confirmation__footer span {
+.dialog .confirmation__content .confirmation__btn {
   width: 66.64%;
   padding: 6px;
   background: white;
@@ -459,6 +477,10 @@ header {
   text-align: center;
   margin: auto;
   border-radius: 15px;
+}
+.dialog .confirmation__content .confirmation__btn:hover {
+  background: #fff;
+  text-decoration: none;
 }
 
 .test {
@@ -489,11 +511,63 @@ header {
   .section__articles .member__block .member__image {
     width: 49.98%;
   }
+
+  .btn__link {
+    max-width: 375px;
+  }
+
+  h2 {
+    padding-top: 25px;
+    text-align: center;
+    font-size: 2.1em;
+  }
+
+  .article__text--aside {
+    width: 49.98%;
+  }
+
+  .article__image {
+    width: 49.98%;
+  }
 }
 @media only screen and (min-width: 1024px) {
+  h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  input {
+    font-size: 1.5em;
+  }
+
   .section__articles .article__container {
     width: 29.155%;
     max-width: 450px;
+  }
+
+  .section {
+    width: 79.135%;
+    margin-left: auto;
+  }
+
+  #exampleOfThreats {
+    width: 66.64%;
+  }
+
+  #sedimentation {
+    width: 41.65%;
+  }
+
+  #desktop, #mobile {
+    display: block;
+  }
+
+  #mobile {
+    display: none;
+  }
+
+  .head__menu--container {
+    display: none;
   }
 }
 

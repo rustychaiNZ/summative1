@@ -6,19 +6,19 @@ header{
 }
 .section{
 	background: $sectionColor;
-	padding: 0 $dPad 25px $dPad;
+	padding: 0 0 25px 0;
 
 	.section__articles{
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
-		align-items: flex-start;
+		align-items: center;
 		align-content: stretch;
 
 		p{
 			margin: 10px 0;
-			padding: 0 $dPad;
+			// padding: 0;
 		}
 		.section__article--text{
 			width: $spancol;
@@ -48,7 +48,7 @@ header{
 // Generic buttons
 .btn__link{
 	width: 8*$col;
-	padding: 15px 5px;
+	padding: 10px 5px;
 	background: #333;
 	display: block;
 	cursor: pointer;

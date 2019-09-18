@@ -25,15 +25,69 @@
 			}
 		}
 	}
+	.btn__link{
+		max-width: 375px;
+	}
+	h2{
+		padding-top: 25px;
+		text-align: center;
+		font-size: 2.1em;
+	}
+
+	// Internal article styling
+	.article__block{
+
+		.article__text{
+
+		}
+	}
+	.article__text--aside{
+		width: 6*$col;
+	}
+	.article__image{
+		width: 6*$col;
+	}	
 }
 
 // Desktop Mode
 @media only screen and (min-width: 1024px) {
+	h1{
+		font-size: 3em;
+		text-align: center;
+	}
+	input{
+		font-size: 1.5em;
+	}
+
 	.section__articles{
 
 		.article__container{
 			width: 3.5*$col;
 			max-width: 450px;
 		}
+	}
+
+	.section{
+		width: 9.5*$col;
+		margin-left: auto;
+		
+	}
+	
+	// Article-images
+	#exampleOfThreats{
+		width: 8*$col;
+	}
+	#sedimentation{
+		width: 5*$col;
+	}
+	// Navigation
+	#desktop{
+		display: block;
+	}
+	#mobile{
+		display: none;
+	}
+	.head__menu--container{
+		display: none;
 	}
 }

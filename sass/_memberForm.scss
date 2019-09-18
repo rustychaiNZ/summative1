@@ -16,7 +16,6 @@
 	}
 	.member__block--field{
 		margin: 2.5*$dMar 0;
-		font-family: $paraFont;
 
 		textarea{
 			height: 90px;
@@ -153,8 +152,8 @@
 .dialog{
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
-	z-index: 1; /* Sit on top */
-	padding-top: 100px; /* Location of the box */
+	z-index: 99; /* Sit on top */
+	padding-top: 10%; /* Location of the box */
 	left: 0;
 	top: 0;
 	width: $spancol; /* Full width */
@@ -175,6 +174,7 @@
 		padding: 0;
 		border: 1px solid #888;
 		width: 80%;
+		max-width: 500px;
 		box-shadow: $shadow;
 
 		.confirmation__header{
@@ -198,7 +198,7 @@
 		}
 
 		.confirmation__body{
-			padding: 15px 16px;
+			padding: 10px 10px;
 			background: white;
 		}
 		
@@ -206,15 +206,21 @@
 			padding: 15px 16px;
 			background: #5cb85c;
 
-			span{
-				width: 8*$col;
-				padding: 6px;
-				background: white;
-				display: block;
-				text-align: center;
-				margin: auto;
-				border-radius: 15px;
-			}
+		}
+
+		.confirmation__btn{
+			width: 8*$col;
+			padding: 6px;
+			background: white;
+			display: block;
+			text-align: center;
+			margin: auto;
+			border-radius: 15px;
+		}
+		.confirmation__btn:hover{
+			background: #fff;
+			text-decoration: none;
+			// cursor: pointer;
 		}
 	}
 }

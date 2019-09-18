@@ -11,10 +11,10 @@ $(document).ready(function() {
 	// 	$('#mobile').fadeOut(500);
 	// })
 	// Closes the hamburger menu
-	$('nav').mouseleave(function(){
-		$('#mobile').toggle('inactive');
-		$('#hamburger').toggle('active');
-	})
+	// $('nav').mouseleave(function(){
+	// 	$('#mobile').toggle('inactive');
+	// 	$('#hamburger').toggle('active');
+	// })
 
 });
 
