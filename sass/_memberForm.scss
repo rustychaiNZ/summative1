@@ -1,11 +1,30 @@
 .member__block{
 	width: $spancol;
-	background: whitesmoke;
 	margin: 5px 0;
 	padding: $dPad;
 	align-self: stretch;
-}
 
+	input[type=radio]{
+		border: 0px;
+		width: 55%;
+    	height: 1.25em;
+	}
+	input[type=checkbox]{
+		border: 0px;
+		width: 55%;
+    	height: 1.25em;
+	}
+}
+.member__field{
+	width: 4*$col;
+	float: left;
+	padding: $dPad 0;
+}
+.member__field--label{
+	width: 8*$col;
+	float: left;
+	padding: $dPad 0;
+}
 .member__text{
 	float: right;
 	display: block;
@@ -14,6 +33,10 @@
 	border: 1px solid black;
 	border-radius: 5px;
 	background-color: lightgrey;
+}
+.member__subscription{
+	width: $spancol;
+	float: left;
 }
 
 .member__block--field{
@@ -32,7 +55,7 @@
 
 // -------- Subscription and activites
 .member__subscription{
-	margin: 2.5*$dMar 0;
+	margin: 10px 0;
 
 	.member__radio{
 		float: right;
@@ -187,7 +210,7 @@
 
 		.confirmation__header{
 			padding: 2px 16px;
-			background-color: #5cb85c;
+			background-color: $primaryColor;
 			color: white;
 
 			/* The Close Button */
@@ -212,7 +235,7 @@
 		
 		.confirmation__footer{
 			padding: 15px 16px;
-			background: #5cb85c;
+			background: $primaryColor;
 
 		}
 

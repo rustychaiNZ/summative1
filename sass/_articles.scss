@@ -19,7 +19,7 @@
 	.article__btn{
 		margin-top: 35px;
 		padding: 5px;
-		background-color: black;
+		background-color: $highLightColor;
 		display: block;
 		text-align: center;
 		margin-right: 5px;
@@ -27,15 +27,15 @@
 		
 		p{
 			font-family: $emphasisFont;
-			color: white;
+			color: $fontDark;
 			margin: 0;
 		}
 	}
 	.article__btn:hover{
-		background: grey;
+		background: $fontDark;
 		
 		p{
-			color: #333;
+			color: $fontLight;
 		}
 	}
 }

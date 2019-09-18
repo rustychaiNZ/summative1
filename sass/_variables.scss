@@ -12,13 +12,18 @@ $headingFont: 'Nunito', sans-serif;
 $emphasisFont: 'PT Mono', monospace;
 
 // colors
-$linkColor: blue;
-$primaryColor: #0368a6;
+$linkColor: #0378a6;
+$primaryColor: #004f6e;
+$fontDark: #1c1c1c;
+$fontLight: #fafafa;
+$highLightColor: #c78904;
 //--- colours sections
 $siteBack: #62c3d9;
 $sectionColor: #d8ebf2;
 $articleColor: white;
-
-
+// navigation
+$navBackColor: #135e56;
+$navHoverColor: #e38242;
 
 $shadow: 4px 4px 10px #404040;
+$navShadow: 5px 6px 13px #404040;

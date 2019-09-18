@@ -9,6 +9,7 @@ header{
 	background: $primaryColor;
 	width: $spancol;
 	padding: 30px;
+	display: fixed;
 }
 .section{	
 	padding: 0 0 25px 0;
@@ -44,7 +45,6 @@ header{
 	padding: $dPad;
 	p{
 		padding: 10px 0;
-		margin: 0 $dPad;
 	}
 }
 	.section__image{
@@ -65,21 +65,25 @@ header{
 .btn__link{
 	width: 8*$col;
 	padding: 10px 5px;
-	background: #333;
+	background: $highLightColor;
 	display: block;
 	cursor: pointer;
 	border-radius: 15px;
 	margin: 10px auto 10px auto;
 	p{
-		color: white;
+		color: $fontDark;
 		margin: auto;
 		text-align: center;
 		font-family: $emphasisFont;
 	}
 }
 .btn__link:hover{
-	background: red;
+	background: $fontDark;
 	color: blue;
+
+	p{
+		color: $fontLight;
+	}
 }
 
 .hidden{

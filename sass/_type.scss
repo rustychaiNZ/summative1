@@ -1,31 +1,31 @@
 // mixin for type: font-family, font-size, font-weight, font-color
 p{
-	@include text-style($paraFont, 1em, 400, #333);
+	@include text-style($paraFont, 1em, 400, $fontDark);
 	margin: 10px 0;
 	padding: 0 $dPad;
 }
 
 label{
-	@include text-style($paraFont, 1.1em, 500, #333);
+	@include text-style($paraFont, 1.1em, 500, $fontDark);
 }
 input{
-	@include text-style($emphasisFont, 1.3em, 100, #333);
+	@include text-style($emphasisFont, 1.3em, 100, $fontDark);
 }
 textarea{
-	@include text-style($emphasisFont, 1.1em, 100, #333)
+	@include text-style($emphasisFont, 1.1em, 100, $fontDark)
 }
 h1{
-	@include text-style($headingFont, 1.5em, 1000, whitesmoke);
+	@include text-style($headingFont, 1.5em, 1000, $fontLight);
 	text-align: right;
 }
 h2{
-	@include text-style($headingFont, 1.8em, 1000, #333);
+	@include text-style($headingFont, 1.8em, 1000, $fontDark);
 	padding: 0 $dPad;
 }
 h3{
-	@include text-style($headingFont, 1.4em, 600, #333);
+	@include text-style($headingFont, 1.4em, 600, $fontDark);
 	padding: 0 $dPad;
 }
 h4{
-	@include text-style($headingFont, 1.2em, 500, #333);
+	@include text-style($headingFont, 1.2em, 500, $fontDark);
 }

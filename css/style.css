@@ -25,7 +25,7 @@ p {
   font-family: "Lexend Deca", sans-serif;
   font-size: 1em;
   font-weight: 400;
-  color: #333;
+  color: #1c1c1c;
   margin: 10px 0;
   padding: 0 4%;
 }
@@ -34,28 +34,28 @@ label {
   font-family: "Lexend Deca", sans-serif;
   font-size: 1.1em;
   font-weight: 500;
-  color: #333;
+  color: #1c1c1c;
 }
 
 input {
   font-family: "PT Mono", monospace;
   font-size: 1.3em;
   font-weight: 100;
-  color: #333;
+  color: #1c1c1c;
 }
 
 textarea {
   font-family: "PT Mono", monospace;
   font-size: 1.1em;
   font-weight: 100;
-  color: #333;
+  color: #1c1c1c;
 }
 
 h1 {
   font-family: "Nunito", sans-serif;
   font-size: 1.5em;
   font-weight: 1000;
-  color: whitesmoke;
+  color: #fafafa;
   text-align: right;
 }
 
@@ -63,7 +63,7 @@ h2 {
   font-family: "Nunito", sans-serif;
   font-size: 1.8em;
   font-weight: 1000;
-  color: #333;
+  color: #1c1c1c;
   padding: 0 4%;
 }
 
@@ -71,7 +71,7 @@ h3 {
   font-family: "Nunito", sans-serif;
   font-size: 1.4em;
   font-weight: 600;
-  color: #333;
+  color: #1c1c1c;
   padding: 0 4%;
 }
 
@@ -79,7 +79,7 @@ h4 {
   font-family: "Nunito", sans-serif;
   font-size: 1.2em;
   font-weight: 500;
-  color: #333;
+  color: #1c1c1c;
 }
 
 .active {
@@ -87,26 +87,26 @@ h4 {
 }
 
 #desktop, #mobile {
-  background-color: #333;
+  background-color: #135e56;
   width: 20.825%;
   max-width: 300px;
   z-index: 50;
   position: sticky;
   float: left;
   top: 25px;
-  left: 0;
   font-family: "PT Mono", monospace;
   display: none;
+  box-shadow: 5px 6px 13px #404040;
 }
 #desktop .highlighted, #mobile .highlighted {
-  background: orange;
+  background: #c78904;
   padding: 10px;
   margin-bottom: 15px;
   text-align: center;
 }
 #desktop ul a, #mobile ul a {
   text-decoration: none;
-  color: white;
+  color: #fafafa;
   display: inline;
 }
 #desktop ul a li, #mobile ul a li {
@@ -114,7 +114,7 @@ h4 {
   padding: 20px;
 }
 #desktop ul a li:hover, #mobile ul a li:hover {
-  background: yellow;
+  background: #e38242;
   color: black;
 }
 
@@ -147,9 +147,10 @@ h4 {
 }
 
 header {
-  background: #0368a6;
+  background: #004f6e;
   width: 100%;
   padding: 30px;
+  display: fixed;
 }
 
 .section {
@@ -164,7 +165,7 @@ header {
   margin-right: auto;
 }
 .section a {
-  color: blue;
+  color: #0378a6;
 }
 
 .section__articles p {
@@ -185,7 +186,6 @@ header {
 }
 .section__article--text p {
   padding: 10px 0;
-  margin: 0 4%;
 }
 
 .section__image {
@@ -203,22 +203,25 @@ header {
 .btn__link {
   width: 66.64%;
   padding: 10px 5px;
-  background: #333;
+  background: #c78904;
   display: block;
   cursor: pointer;
   border-radius: 15px;
   margin: 10px auto 10px auto;
 }
 .btn__link p {
-  color: white;
+  color: #1c1c1c;
   margin: auto;
   text-align: center;
   font-family: "PT Mono", monospace;
 }
 
 .btn__link:hover {
-  background: red;
+  background: #1c1c1c;
   color: blue;
+}
+.btn__link:hover p {
+  color: #fafafa;
 }
 
 .hidden {
@@ -244,7 +247,7 @@ header {
 .article__container--btn .article__btn {
   margin-top: 35px;
   padding: 5px;
-  background-color: black;
+  background-color: #c78904;
   display: block;
   text-align: center;
   margin-right: 5px;
@@ -252,14 +255,14 @@ header {
 }
 .article__container--btn .article__btn p {
   font-family: "PT Mono", monospace;
-  color: white;
+  color: #1c1c1c;
   margin: 0;
 }
 .article__container--btn .article__btn:hover {
-  background: grey;
+  background: #1c1c1c;
 }
 .article__container--btn .article__btn:hover p {
-  color: #333;
+  color: #fafafa;
 }
 
 .article__container--text {
@@ -304,10 +307,31 @@ header {
 
 .member__block {
   width: 100%;
-  background: whitesmoke;
   margin: 5px 0;
   padding: 4%;
   align-self: stretch;
+}
+.member__block input[type=radio] {
+  border: 0px;
+  width: 55%;
+  height: 1.25em;
+}
+.member__block input[type=checkbox] {
+  border: 0px;
+  width: 55%;
+  height: 1.25em;
+}
+
+.member__field {
+  width: 33.32%;
+  float: left;
+  padding: 4% 0;
+}
+
+.member__field--label {
+  width: 66.64%;
+  float: left;
+  padding: 4% 0;
 }
 
 .member__text {
@@ -318,6 +342,11 @@ header {
   border: 1px solid black;
   border-radius: 5px;
   background-color: lightgrey;
+}
+
+.member__subscription {
+  width: 100%;
+  float: left;
 }
 
 .member__block--field {
@@ -334,7 +363,7 @@ header {
 }
 
 .member__subscription {
-  margin: 10% 0;
+  margin: 10px 0;
 }
 .member__subscription .member__radio {
   float: right;
@@ -485,7 +514,7 @@ header {
 }
 .dialog .confirmation__content .confirmation__header {
   padding: 2px 16px;
-  background-color: #5cb85c;
+  background-color: #004f6e;
   color: white;
   /* The Close Button */
 }
@@ -506,7 +535,7 @@ header {
 }
 .dialog .confirmation__content .confirmation__footer {
   padding: 15px 16px;
-  background: #5cb85c;
+  background: #004f6e;
 }
 .dialog .confirmation__content .confirmation__btn {
   width: 66.64%;
@@ -530,24 +559,29 @@ header {
 }
 
 @media only screen and (min-width: 768px) {
-  .section__articles .article__container {
+  .article__container {
     width: 45.815%;
   }
-  .section__articles h1 {
+
+  h1 {
     font-size: 2.5em;
   }
-  .section__articles .member__block {
+
+  .member__block {
     width: 49.98%;
     margin: auto;
   }
-  .section__articles .member__block .btn__payment {
+
+  .btn__payment {
     width: 100%;
     float: none;
   }
-  .section__articles .member__block .member__submit--btn {
+
+  .member__submit--btn {
     margin: 0 auto;
   }
-  .section__articles .member__block .member__image {
+
+  .member__image {
     width: 49.98%;
   }
 
@@ -580,7 +614,7 @@ header {
   }
 
   .section__articles {
-    max-width: 1250px;
+    max-width: 1050px;
     margin-left: auto;
   }
   .section__articles .article__container {
@@ -611,7 +645,19 @@ header {
   .section {
     width: 79.135%;
     margin-left: auto;
-    max-width: 1250px;
+    min-height: 100vh;
+  }
+
+  .member__image {
+    width: 66.64%;
+  }
+
+  .member__field {
+    padding: 0 0;
+  }
+
+  .member__subscription {
+    margin: 10px 0;
   }
 
   #exampleOfThreats {
@@ -624,6 +670,7 @@ header {
 
   #desktop, #mobile {
     display: block;
+    margin-top: 10px;
   }
 
   #mobile {
