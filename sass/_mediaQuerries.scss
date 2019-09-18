@@ -32,6 +32,22 @@ h1{
 		font-size: 2.1em;
 	}
 
+	.btn__card{
+		float: none;
+		margin: 10px auto;
+	}
+
+	.btn__d-debit{
+		float: none;
+		margin: 10px auto;
+	}
+
+	.btn__paypal{
+		float: none;
+		margin: 10px auto;
+		display: block;
+	}
+
 	// Internal article styling
 	.article__block{
 
@@ -44,11 +60,18 @@ h1{
 	}
 	.article__image{
 		width: 6*$col;
+	}
+
+	#hamburger{
+	font-size: 4em;
 	}	
 }
 
 // Desktop Mode
 @media only screen and (min-width: 1024px) {
+	header{
+		position: relative;
+	}
 	h1{
 		font-size: 3em;
 		text-align: center;

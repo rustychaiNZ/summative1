@@ -5,3 +5,11 @@
 	font-weight: $fw;
 	color: $fc;
 }
+
+// images for div backgrounds
+@mixin div-background($bi, $bs, $bp, $br){
+	background-image: $bi;
+	background-size: $bs;
+	background-position: $bp;
+	background-repeat: $br;
+}

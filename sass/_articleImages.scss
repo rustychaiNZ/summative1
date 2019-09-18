@@ -1,6 +1,19 @@
-
+// @mixin div-background($bi, $bs, $bp, $br){
 #imageThreat{
-	background-image: url("../assets/threats_dogOnShore.jpg");
-	background-position: center;
-	background-size: 200%;
+	@include div-background(url("../assets/threats_dogOnShore.jpg"), 200%, center, no-repeat)
+}
+#imgCockle{
+	@include div-background(url("../assets/cockle.jpg"), 200%, center, no-repeat)
+}
+#imgSaltMarsh{
+	@include div-background(url("../assets/articles_saltMarsh.jpg"), 100%, bottom center, no-repeat)
+}
+#imgBirds{
+	@include div-background(url("../assets/articles_birds.jpg"), 125%, center, no-repeat)
+}
+#imgReservation{
+	@include div-background(url("../assets/articles_reservation.jpg"), 125%, bottom center, no-repeat)
+}
+#imgResponsibilities{
+	@include div-background(url("../assets/articles_responsibilities.jpg"), 140%, center, no-repeat)	
 }

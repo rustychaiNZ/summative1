@@ -9,6 +9,9 @@
 	a{
 		text-decoration: none;
 	}
+	p{
+		padding: 0;
+	}
 }
 
 .article__container--btn{
@@ -53,6 +56,7 @@
 
 .article__container--image{
 	height: 20vh;
+	max-height: 300px;
 }
 
 .article__container:hover{

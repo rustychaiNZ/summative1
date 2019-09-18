@@ -47,12 +47,18 @@
 	max-width: 100%;
 	position: absolute;
 	top: 0;
-	box-shadow: 8px 7px 15px black;
+	box-shadow: $navShadow;
+
+	.close__container{
+		width: $spancol;
+		float: left;
+
+	}
 }
 
 #hamburger{
 	font-size: 2em;
-	color: red;
+	color: $highLightColor;
 	display: block;
 	float: left;
 	cursor: pointer;
@@ -60,6 +66,18 @@
 	top: 25px;
 	left: 10px;
 }
+#closeMenu{
+	color: $fontLight;
+	font-size: 3em;
+	font-weight: bold;
+	display: block;
+	margin: 15px;
+}
 #hamburger:hover{
-	color: blue;
+	color: $fontDark;
+}
+#closeMenu:hover{
+	color: $fontDark;
+	text-decoration: none;
+	cursor: pointer;
 }

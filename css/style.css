@@ -96,7 +96,7 @@ h4 {
   top: 25px;
   font-family: "PT Mono", monospace;
   display: none;
-  box-shadow: 5px 6px 13px #404040;
+  box-shadow: 2px 2px 13px #404040;
 }
 #desktop .highlighted, #mobile .highlighted {
   background: #c78904;
@@ -123,12 +123,16 @@ h4 {
   max-width: 100%;
   position: absolute;
   top: 0;
-  box-shadow: 8px 7px 15px black;
+  box-shadow: 2px 2px 13px #404040;
+}
+#mobile .close__container {
+  width: 100%;
+  float: left;
 }
 
 #hamburger {
   font-size: 2em;
-  color: red;
+  color: #c78904;
   display: block;
   float: left;
   cursor: pointer;
@@ -137,8 +141,22 @@ h4 {
   left: 10px;
 }
 
+#closeMenu {
+  color: #fafafa;
+  font-size: 3em;
+  font-weight: bold;
+  display: block;
+  margin: 15px;
+}
+
 #hamburger:hover {
-  color: blue;
+  color: #1c1c1c;
+}
+
+#closeMenu:hover {
+  color: #1c1c1c;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .page {
@@ -150,7 +168,8 @@ header {
   background: #004f6e;
   width: 100%;
   padding: 30px;
-  display: fixed;
+  position: sticky;
+  top: 0;
 }
 
 .section {
@@ -163,6 +182,7 @@ header {
   align-items: center;
   align-content: stretch;
   margin-right: auto;
+  box-shadow: 2px 1px 10px #3d3d3d;
 }
 .section a {
   color: #0378a6;
@@ -238,6 +258,9 @@ header {
 .article__container a {
   text-decoration: none;
 }
+.article__container p {
+  padding: 0;
+}
 
 .article__container--btn {
   width: 16.66%;
@@ -277,6 +300,7 @@ header {
 
 .article__container--image {
   height: 20vh;
+  max-height: 300px;
 }
 
 .article__container:hover {
@@ -301,10 +325,71 @@ header {
 
 #imageThreat {
   background-image: url("../assets/threats_dogOnShore.jpg");
-  background-position: center;
   background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
+#imgCockle {
+  background-image: url("../assets/cockle.jpg");
+  background-size: 200%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#imgSaltMarsh {
+  background-image: url("../assets/articles_saltMarsh.jpg");
+  background-size: 100%;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+#imgBirds {
+  background-image: url("../assets/articles_birds.jpg");
+  background-size: 125%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#imgReservation {
+  background-image: url("../assets/articles_reservation.jpg");
+  background-size: 125%;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+#imgResponsibilities {
+  background-image: url("../assets/articles_responsibilities.jpg");
+  background-size: 140%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.img__container {
+  width: 83.3%;
+  height: 50vh;
+  margin: auto;
+}
+
+#img1 {
+  background-image: url("../assets/boatShedWithDog.jpg");
+  background-size: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#img2 {
+  background-image: url("../assets/rubbish.jpg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+  #img1 {
+    background-size: 110%;
+  }
+}
 .member__block {
   width: 100%;
   margin: 5px 0;
@@ -320,6 +405,9 @@ header {
   border: 0px;
   width: 55%;
   height: 1.25em;
+}
+.member__block h3 {
+  padding: 0;
 }
 
 .member__field {
@@ -341,7 +429,7 @@ header {
   margin: 5px 0;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: lightgrey;
+  background-color: #fontLight;
 }
 
 .member__subscription {
@@ -403,7 +491,7 @@ header {
   width: 45.815%;
   padding: 4%;
   margin: 5px;
-  background: grey;
+  background: #c78904;
   border-radius: 5px;
 }
 .btn__payment p {
@@ -411,13 +499,16 @@ header {
 }
 
 .btn__payment:hover {
-  background-color: darkslategrey;
+  background-color: #004f6e;
   cursor: pointer;
   box-shadow: 4px 4px 10px #404040;
 }
+.btn__payment:hover p {
+  color: #fafafa;
+}
 
 .btn__payment--active {
-  background: darkslategrey;
+  background: #1c1c1c;
   box-shadow: 4px 4px 10px #404040;
 }
 .btn__payment--active p {
@@ -436,6 +527,7 @@ header {
 
 .btn__paypal {
   display: inline-block;
+  margin: auto;
 }
 
 .member__payment--exp {
@@ -446,24 +538,24 @@ header {
 .member__submit--btn {
   width: 83.3%;
   padding: 10px 5px;
-  background: #333;
+  background: #c78904;
   display: block;
   margin: auto;
   cursor: pointer;
   border-radius: 15px;
 }
 .member__submit--btn p {
-  color: white;
+  color: #1c1c1c;
   margin: auto;
   text-align: center;
   font-family: "PT Mono", monospace;
 }
 
 .member__submit--btn:hover {
-  background: blue;
+  background: #004f6e;
 }
 .member__submit--btn:hover p {
-  color: black;
+  color: #fafafa;
 }
 
 #selectable .ui-selected {
@@ -595,6 +687,22 @@ header {
     font-size: 2.1em;
   }
 
+  .btn__card {
+    float: none;
+    margin: 10px auto;
+  }
+
+  .btn__d-debit {
+    float: none;
+    margin: 10px auto;
+  }
+
+  .btn__paypal {
+    float: none;
+    margin: 10px auto;
+    display: block;
+  }
+
   .article__text--aside {
     width: 49.98%;
   }
@@ -602,8 +710,16 @@ header {
   .article__image {
     width: 49.98%;
   }
+
+  #hamburger {
+    font-size: 4em;
+  }
 }
 @media only screen and (min-width: 1024px) {
+  header {
+    position: relative;
+  }
+
   h1 {
     font-size: 3em;
     text-align: center;

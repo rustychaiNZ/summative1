@@ -14,6 +14,9 @@
 		width: 55%;
     	height: 1.25em;
 	}
+	h3{
+		padding: 0;
+	}
 }
 .member__field{
 	width: 4*$col;
@@ -32,7 +35,7 @@
 	margin: 5px 0;
 	border: 1px solid black;
 	border-radius: 5px;
-	background-color: lightgrey;
+	background-color: #fontLight;
 }
 .member__subscription{
 	width: $spancol;
@@ -102,21 +105,26 @@
 	width: 5.5*$col;
 	padding: $dPad;
 	margin: 5px;
-	background: grey;
+	background: $highLightColor;
 	border-radius: 5px;
+	
 	p{
 		text-align: center;
 	}
 }
 
 .btn__payment:hover{
-	background-color: darkslategrey;
+	background-color: $primaryColor;
 	cursor: pointer;
 	box-shadow: $shadow;
+
+	p{
+		color: $fontLight;
+	}
 }
 
 .btn__payment--active{
-	background: darkslategrey;
+	background: $fontDark;
 	box-shadow: $shadow;
 	p{
 		color: white;
@@ -135,6 +143,7 @@
 
 .btn__paypal{
 	display: inline-block;
+	margin: auto;
 }
 
 .member__payment--exp{
@@ -145,14 +154,14 @@
 .member__submit--btn{
 	width: 10*$col;
 	padding: 10px 5px;
-	background: #333;
+	background: $highLightColor;
 	display: block;
 	margin: auto;
 	cursor: pointer;
 	border-radius: 15px;
 
 	p{
-		color: white;
+		color: $fontDark;
 		margin: auto;
 		text-align: center;
 		font-family: $emphasisFont;
@@ -160,10 +169,10 @@
 }
 
 .member__submit--btn:hover{
-	background: blue;
+	background: $primaryColor;
 	
 	p{
-		color: black;
+		color: $fontLight;
 	}
 }
 
