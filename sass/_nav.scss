@@ -13,12 +13,24 @@
 	font-family: $emphasisFont;
 	display: none;
 	box-shadow: $navShadow;
+	border-radius: 10px;
 
 	.highlighted{
 	background: $highLightColor;
 	padding: 10px;
 	margin-bottom: 15px;
 	text-align: center;
+	}
+	.nav__active{
+		color: $fontDark;
+
+		li{
+			background-color: $fontLight;
+		}
+		li.index{
+			background-color: $fontLight;
+			border-radius: 10px 10px 0 0;
+		}
 	}
 
 	ul{

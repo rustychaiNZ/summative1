@@ -94,9 +94,9 @@ $(function() {
     });
     $('#op').click(function(){
     	$('#op').addClass('about__active');
+    	$('#cfi').removeClass('about__active');
     	$('#oo').removeClass('about__active');
     	$('#oc').removeClass('about__active');
-    	$('#cfi').removeClass('about__active');
     });
 });
 

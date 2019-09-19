@@ -1,19 +1,57 @@
+.article__image{
+	width: $spancol;
+	display: block;
+	margin: 10px 0;
+	height: 25vh;
+	padding: 1%;
+}
+.article__image--left{
+	float: left;
+}
+.article__image--right{
+	float: right;
+}
+.img__container--article{
+	height: 100%;
+	margin: auto;
+}
+
 // @mixin div-background($bi, $bs, $bp, $br){
 #imageThreat{
-	@include div-background(url("../assets/threats_dogOnShore.jpg"), 200%, center, no-repeat)
+	@include div-background(url("../assets/threats_dogOnShore.jpg"), cover, center, no-repeat)
 }
 #imgCockle{
-	@include div-background(url("../assets/cockle.jpg"), 200%, center, no-repeat)
+	@include div-background(url("../assets/cockle.jpg"), cover, center, no-repeat)
 }
 #imgSaltMarsh{
-	@include div-background(url("../assets/articles_saltMarsh.jpg"), 100%, bottom center, no-repeat)
+	@include div-background(url("../assets/articles_saltMarsh.jpg"), cover, bottom center, no-repeat)
 }
 #imgBirds{
-	@include div-background(url("../assets/articles_birds.jpg"), 125%, center, no-repeat)
+	@include div-background(url("../assets/articles_birds.jpg"), cover, center, no-repeat)
 }
 #imgReservation{
-	@include div-background(url("../assets/articles_reservation.jpg"), 125%, bottom center, no-repeat)
+	@include div-background(url("../assets/articles_reservation.jpg"), cover, bottom center, no-repeat)
 }
 #imgResponsibilities{
-	@include div-background(url("../assets/articles_responsibilities.jpg"), 140%, center, no-repeat)	
+	@include div-background(url("../assets/articles_responsibilities.jpg"), cover, center, no-repeat)	
+}
+
+// Images inside threats article
+#imgThreats_ponds{
+	@include div-background(url("../assets/threats_ponds.jpg"), cover, center, no-repeat)	
+}
+#imgThreats_sedimentation{
+	@include div-background(url("../assets/threats_sedimentation.jpg"), cover, center, no-repeat)
+}
+
+@media only screen and (min-width: 768px) {
+	.article__image{
+		height: 30vh;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.article__image{
+		height: 40vh;
+	}
 }

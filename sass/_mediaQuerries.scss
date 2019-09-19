@@ -1,28 +1,28 @@
 // Tablet mode
 @media only screen and (min-width: 768px) {
-
-
-.article__container{
-	width: 5.5*$col;
-}
-h1{
-	font-size: 2.5em;
-}
-.member__block{
-	width: 6*$col;
-	margin: auto;
-}
-.btn__payment{
-	width: $spancol;
-	float: none;
-	// margin: 8px auto;
-}
-.member__submit--btn{
-	margin: 0 auto;
-}
-.member__image{
-	width: 6*$col;
-}
+	
+	
+	.article__container{
+		width: 5.5*$col;
+	}
+	h1{
+		font-size: 2.5em;
+	}
+	.member__block{
+		width: 6*$col;
+		margin: auto;
+	}
+	.btn__payment{
+		width: $spancol;
+		float: none;
+		// margin: 8px auto;
+	}
+	.member__submit--btn{
+		margin: 0 auto;
+	}
+	.member__image{
+		width: 6*$col;
+	}
 	.btn__link{
 		max-width: 375px;
 	}
@@ -63,8 +63,17 @@ h1{
 	}
 
 	#hamburger{
-	font-size: 4em;
-	}	
+		font-size: 4em;
+	}
+	.column {
+  	  flex: 6*$col;
+  	  max-width: 6*$col;
+  	}
+	.column__mobile{
+		display: block;
+	}
+
+
 }
 
 // Desktop Mode
@@ -110,7 +119,6 @@ h1{
 	.section{
 		width: 9.5*$col;
 		margin-left: auto;
-		min-height: 100vh;
 	}
 	.section__article--text{
 		padding: 0 $dPad;
@@ -147,6 +155,28 @@ h1{
 	.img__container{
 		max-width: 850px;
 	}
+
+	// Responsive gallery
+	.column {
+  	  flex: 4*$col;
+  	  max-width: 4*$col;
+  	}
+  	.column__tablet{
+  		display: block;
+  	}
+  	.gallery__resize{
+  		margin: 25px;
+  		border-radius: 15px;
+  		box-shadow: $galleryShadow;
+  	}
+  	.section__clean-up{
+  		width: 10*$col;
+  		margin: auto;
+  		border-radius: 10px;
+  	}
+  	.section__clean-up:hover{
+  		box-shadow: $sectionShadow;
+  	}
 
 }
 @media only screen and (min-width: 1500px) {

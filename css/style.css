@@ -25,7 +25,7 @@ p {
   font-family: "Lexend Deca", sans-serif;
   font-size: 1em;
   font-weight: 400;
-  color: #1c1c1c;
+  color: #303030;
   margin: 10px 0;
   padding: 0 4%;
 }
@@ -34,21 +34,21 @@ label {
   font-family: "Lexend Deca", sans-serif;
   font-size: 1.1em;
   font-weight: 500;
-  color: #1c1c1c;
+  color: #303030;
 }
 
 input {
   font-family: "PT Mono", monospace;
   font-size: 1.3em;
   font-weight: 100;
-  color: #1c1c1c;
+  color: #303030;
 }
 
 textarea {
   font-family: "PT Mono", monospace;
   font-size: 1.1em;
   font-weight: 100;
-  color: #1c1c1c;
+  color: #303030;
 }
 
 h1 {
@@ -63,7 +63,7 @@ h2 {
   font-family: "Nunito", sans-serif;
   font-size: 1.8em;
   font-weight: 1000;
-  color: #1c1c1c;
+  color: #303030;
   padding: 0 4%;
 }
 
@@ -71,7 +71,7 @@ h3 {
   font-family: "Nunito", sans-serif;
   font-size: 1.4em;
   font-weight: 600;
-  color: #1c1c1c;
+  color: #303030;
   padding: 0 4%;
 }
 
@@ -79,7 +79,7 @@ h4 {
   font-family: "Nunito", sans-serif;
   font-size: 1.2em;
   font-weight: 500;
-  color: #1c1c1c;
+  color: #303030;
 }
 
 .active {
@@ -97,12 +97,23 @@ h4 {
   font-family: "PT Mono", monospace;
   display: none;
   box-shadow: 2px 2px 13px #404040;
+  border-radius: 10px;
 }
 #desktop .highlighted, #mobile .highlighted {
   background: #c78904;
   padding: 10px;
   margin-bottom: 15px;
   text-align: center;
+}
+#desktop .nav__active, #mobile .nav__active {
+  color: #303030;
+}
+#desktop .nav__active li, #mobile .nav__active li {
+  background-color: #fafafa;
+}
+#desktop .nav__active li.index, #mobile .nav__active li.index {
+  background-color: #fafafa;
+  border-radius: 10px 10px 0 0;
 }
 #desktop ul a, #mobile ul a {
   text-decoration: none;
@@ -150,17 +161,18 @@ h4 {
 }
 
 #hamburger:hover {
-  color: #1c1c1c;
+  color: #303030;
 }
 
 #closeMenu:hover {
-  color: #1c1c1c;
+  color: #303030;
   text-decoration: none;
   cursor: pointer;
 }
 
 .page {
   min-height: 100vh;
+  width: 100%;
   background: #62c3d9;
 }
 
@@ -194,6 +206,21 @@ header {
 
 .section__span {
   width: 100%;
+}
+
+.section__clean-up {
+  text-align: center;
+  background: #303030;
+}
+.section__clean-up p {
+  font-family: "PT Mono", monospace;
+  color: #fafafa;
+  font-size: 1.3em;
+  padding-bottom: 0.5 4%;
+}
+.section__clean-up h2 {
+  padding: 0.6%;
+  color: white;
 }
 
 .section__span--index {
@@ -230,14 +257,14 @@ header {
   margin: 10px auto 10px auto;
 }
 .btn__link p {
-  color: #1c1c1c;
+  color: #303030;
   margin: auto;
   text-align: center;
   font-family: "PT Mono", monospace;
 }
 
 .btn__link:hover {
-  background: #1c1c1c;
+  background: #303030;
   color: blue;
 }
 .btn__link:hover p {
@@ -248,17 +275,16 @@ header {
   width: 100%;
 }
 .about__container ul {
-  margin: 4%;
   width: 100%;
   display: block;
-  float: left;
 }
 .about__container ul li {
   display: block;
   width: 24.99%;
-  min-width: 200px;
   float: left;
-  margin: 20px 0;
+  min-width: 200px;
+  margin: 20px auto;
+  text-align: center;
 }
 .about__container ul li a {
   padding: 15px 8%;
@@ -267,18 +293,51 @@ header {
   font-family: "PT Mono", monospace;
   font-size: 1em;
   font-weight: 100;
-  color: #1c1c1c;
+  color: #303030;
 }
 .about__container ul li a:hover {
   background-color: #004f6e;
   color: #fafafa;
 }
 .about__container ul li .about__active {
-  background-color: #1c1c1c;
+  background-color: #303030;
   color: #fafafa;
 }
 
+.about__btn--contaienr {
+  width: 100%;
+  float: left;
+}
+
 .hidden {
+  display: none;
+}
+
+.gallery__resize {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  background: #fafafa;
+}
+
+.column {
+  flex: 100%;
+  max-width: 100%;
+  padding: 1%;
+}
+.column img {
+  vertical-align: middle;
+  margin-top: 8px;
+  width: 100%;
+  border: 10px solid #004f6e;
+}
+
+.column__mobile {
+  display: none;
+}
+
+.column__tablet {
   display: none;
 }
 
@@ -312,11 +371,11 @@ header {
 }
 .article__container--btn .article__btn p {
   font-family: "PT Mono", monospace;
-  color: #1c1c1c;
+  color: #303030;
   margin: 0;
 }
 .article__container--btn .article__btn:hover {
-  background: #1c1c1c;
+  background: #303030;
 }
 .article__container--btn .article__btn:hover p {
   color: #fafafa;
@@ -348,80 +407,129 @@ header {
 .article__image {
   width: 100%;
   display: block;
-  float: left;
   margin: 10px 0;
+  height: 25vh;
+  padding: 1%;
 }
-.article__image img {
-  width: 100%;
-  display: block;
+
+.article__image--left {
+  float: left;
+}
+
+.article__image--right {
+  float: right;
+}
+
+.img__container--article {
+  height: 100%;
   margin: auto;
 }
 
 #imageThreat {
   background-image: url("../assets/threats_dogOnShore.jpg");
-  background-size: 200%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #imgCockle {
   background-image: url("../assets/cockle.jpg");
-  background-size: 200%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #imgSaltMarsh {
   background-image: url("../assets/articles_saltMarsh.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
 }
 
 #imgBirds {
   background-image: url("../assets/articles_birds.jpg");
-  background-size: 125%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #imgReservation {
   background-image: url("../assets/articles_reservation.jpg");
-  background-size: 125%;
+  background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
 }
 
 #imgResponsibilities {
   background-image: url("../assets/articles_responsibilities.jpg");
-  background-size: 140%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+#imgThreats_ponds {
+  background-image: url("../assets/threats_ponds.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#imgThreats_sedimentation {
+  background-image: url("../assets/threats_sedimentation.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 768px) {
+  .article__image {
+    height: 30vh;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .article__image {
+    height: 40vh;
+  }
+}
 .img__container {
   width: 83.3%;
-  height: 50vh;
+  height: 250px;
   margin: auto;
 }
 
 #img1 {
   background-image: url("../assets/boatShedWithDog.jpg");
-  background-size: 150%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #img2 {
   background-image: url("../assets/rubbish.jpg");
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#img_aboutCover {
+  background-image: url("../assets/about_cleanUp.jpg");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 @media only screen and (min-width: 768px) {
+  .img__container {
+    height: 400px;
+  }
+
   #img1 {
     background-size: 110%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .img__container {
+    height: 500px;
   }
 }
 .member__block {
@@ -542,7 +650,7 @@ header {
 }
 
 .btn__payment--active {
-  background: #1c1c1c;
+  background: #303030;
   box-shadow: 4px 4px 10px #404040;
 }
 .btn__payment--active p {
@@ -579,7 +687,7 @@ header {
   border-radius: 15px;
 }
 .member__submit--btn p {
-  color: #1c1c1c;
+  color: #303030;
   margin: auto;
   text-align: center;
   font-family: "PT Mono", monospace;
@@ -748,6 +856,15 @@ header {
   #hamburger {
     font-size: 4em;
   }
+
+  .column {
+    flex: 49.98%;
+    max-width: 49.98%;
+  }
+
+  .column__mobile {
+    display: block;
+  }
 }
 @media only screen and (min-width: 1024px) {
   header {
@@ -795,7 +912,6 @@ header {
   .section {
     width: 79.135%;
     margin-left: auto;
-    min-height: 100vh;
   }
 
   .section__article--text {
@@ -837,6 +953,31 @@ header {
 
   .img__container {
     max-width: 850px;
+  }
+
+  .column {
+    flex: 33.32%;
+    max-width: 33.32%;
+  }
+
+  .column__tablet {
+    display: block;
+  }
+
+  .gallery__resize {
+    margin: 25px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px #8f8f8f;
+  }
+
+  .section__clean-up {
+    width: 83.3%;
+    margin: auto;
+    border-radius: 10px;
+  }
+
+  .section__clean-up:hover {
+    box-shadow: 2px 1px 10px #3d3d3d;
   }
 }
 @media only screen and (min-width: 1500px) {

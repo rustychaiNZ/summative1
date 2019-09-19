@@ -33,7 +33,7 @@
 					<nav id="mobile">
 						<i class="fa fa-times" aria-hidden="true" id="closeMenu"></i>
 						<ul>
-							<a href="index.html"><li>Home</li></a>
+							<a href="index.html" class="nav__active"><li>Home</li></a>
 							<a href="pages/aboutUs.html"><li>More About Us</li></a>
 							<a href="pages/education.html"><li>Educational Resources</li></a>
 							<a href="pages/articles.html"><li>Articles</li></a>
@@ -56,7 +56,7 @@
 				<!-- Holds the navigation menu for desktop-->
 					<nav id="desktop">
 						<ul>
-							<a href="index.html"><li>Home</li></a>
+							<a href="index.html" class="nav__active"><li class="index">Home</li></a>
 							<a href="pages/aboutUs.html"><li>More About Us</li></a>
 							<a href="pages/education.html"><li>Educational Resources</li></a>
 							<a href="pages/articles.html"><li>Articles</li></a>
@@ -87,13 +87,7 @@
 
 						</div>
 					</div>
-
-					<div class="section__article--text">					
-
-						<p>On this website you can read about how we carefor the Inlet and promote its wellbeing withcentral and local government. You can learn aboutour <b>activities</b> and <b>policies, and readour newsletters</b> and <b>annual reports</b>.You will find <b>scientific information</b> aboutthe Inlet and its catchment and links to relevant<b>research</b>. The section 'The Inlet' containsinformation about the <b>natural</b> and <b>humanhistory</b> and current concerns about threats toInlet ecology. Teachers can download our educational</b> resources.</p>
-
-					</div>
-
+					
 					<!-- Button positioned after the article -->
 					<div class="section__span">
 						<a class="btn__link" href="pages/joinUs.html">
@@ -103,8 +97,14 @@
 						</a>
 					</div>
 
+					<div class="section__article--text">					
+
+						<p>On this website you can read about how we carefor the Inlet and promote its wellbeing withcentral and local government. You can learn aboutour <b>activities</b> and <b>policies, and readour newsletters</b> and <b>annual reports</b>.You will find <b>scientific information</b> aboutthe Inlet and its catchment and links to relevant<b>research</b>. The section 'The Inlet' containsinformation about the <b>natural</b> and <b>humanhistory</b> and current concerns about threats toInlet ecology. Teachers can download our educational</b> resources.</p>
+
+					</div>
+
 					<!-- Information regaurding the next clean up taking place around the Inlet -->
-					<div class="section__span">
+					<div class="section__span section__clean-up">
 						<h2>Inlet Clean Up</h2>
 						<p>This year's Inlet Clean-up will be held on Sunday 3 November. 
 						<br>Meet at Browns Bay, 10:30am wet or dry
@@ -112,10 +112,39 @@
 					</div>
 
 					<!-- Gallery of images using flex box to reorganise itself -->
-					<div class="section__span">
-						<div class="img__container" id="img2">
-							
+					<div class="gallery__resize">
+						<div class="section__span">
+							<h2>Sample of 2019 Photographs from Members</h2>
 						</div>
+						<div class="section__span">
+							<a class="btn__link" href="https://photos.google.com/share/AF1QipPUvca02QTZ3UGZuOTITh-3i7ESoGS2-UIcxzh9RbpS6Sp3kEYqq34QxpW_FxhIIQ?key=bVpIeEw1cWRjcG5wVHk5ZXUwUTN0T2J4di1WaU9n">
+								<div class="section__btn btn">
+									<p class="btn">All from 2019</p>
+								</div>
+							</a>
+						</div>
+						<!-- Images that will appear on mobile -->
+						<div class="column">
+							<img src="assets/sortableGallery/img2.jpg">
+							<img src="assets/sortableGallery/img3.jpg">
+							<img src="assets/sortableGallery/img4.jpg">
+							<img src="assets/sortableGallery/img11.jpg">
+						</div>
+						<!-- Images that will only appear on tablet and desktop -->
+						<div class="column column__mobile">
+							<img src="assets/sortableGallery/img13.jpg">
+							<img src="assets/sortableGallery/img12.jpg">
+							<img src="assets/sortableGallery/img8.jpg">
+							<img src="assets/sortableGallery/img1.jpg">
+						</div>
+
+						<div class="column column__tablet">
+							<img src="assets/sortableGallery/img10.jpeg">
+							<img src="assets/sortableGallery/img6.jpg">
+							<img src="assets/sortableGallery/img5.jpg">
+							<img src="assets/sortableGallery/img9.jpeg">
+						</div>
+
 					</div>
 
 					<!-- Button for donating to the organisation -->

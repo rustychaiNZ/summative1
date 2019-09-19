@@ -1,0 +1,35 @@
+// @mixin div-background($bi, $bs, $bp, $br){
+.img__container{
+	width: 10*$col;
+	height: 250px;
+	margin: auto;
+}
+
+// Index Images
+#img1{
+	@include div-background(url('../assets/boatShedWithDog.jpg'), cover, center, no-repeat)
+}
+#img2{
+	@include div-background(url('../assets/rubbish.jpg'), cover, center, no-repeat)
+}
+
+// About page images
+#img_aboutCover{
+	@include div-background(url('../assets/about_cleanUp.jpg'), cover, center, no-repeat)
+}
+
+@media only screen and (min-width: 768px) {
+	.img__container{
+		height: 400px;
+	}
+
+	#img1{
+		background-size: 110%;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.img__container{
+		height: 500px;
+	}
+}
