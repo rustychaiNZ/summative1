@@ -88,6 +88,40 @@ header{
 	}
 }
 
+.about__container{
+	width: $spancol;
+
+	ul{
+		margin: $dPad;
+		width: $spancol;
+		display: block;
+		float: left;
+
+		li{
+			display: block;
+			width: 3*$col;
+			min-width: 200px;
+			float: left;
+			margin: 20px 0;			
+
+			a{
+				padding: 15px 2*$dPad;
+				background-color: $highLightColor;
+				border-radius: 15px 5px;
+				@include text-style($emphasisFont, 1em, 100, $fontDark);
+			}
+			a:hover{
+				background-color: $primaryColor;
+				color: $fontLight;
+			} 
+			.about__active{
+				background-color: $fontDark;
+				color: $fontLight;
+			}
+		}
+	}
+}
+
 .hidden{
 	display: none;
 }

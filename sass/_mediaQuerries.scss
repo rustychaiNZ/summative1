@@ -81,7 +81,7 @@ h1{
 	}
 
 	.section__articles{
-		max-width: 1050px;
+		max-width: 1150px;
 		margin-left: auto;
 
 		.article__container{
@@ -107,11 +107,13 @@ h1{
 			margin: auto;
 		}
 	}
-
 	.section{
 		width: 9.5*$col;
 		margin-left: auto;
-		min-height: 100vh
+		min-height: 100vh;
+	}
+	.section__article--text{
+		padding: 0 $dPad;
 	}
 
 	.member__image{
@@ -141,5 +143,14 @@ h1{
 	}
 	.head__menu--container{
 		display: none;
+	}
+	.img__container{
+		max-width: 850px;
+	}
+
+}
+@media only screen and (min-width: 1500px) {
+	#desktop{
+		margin-left: 0.5*$dPad;
 	}
 }

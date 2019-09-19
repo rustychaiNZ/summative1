@@ -19,6 +19,8 @@ $(document).ready(function() {
 
 });
 
+
+
 // Function for the payment section on join us page
 $(function() {
 	$('#card').click(function() {
@@ -43,7 +45,6 @@ $(function() {
 		$('#ddbt').removeClass('btn__payment--active');
 		$('#pp').removeClass('btn__payment--active')
 	});
-
 	$('#ddbt').click(function(){
 		$('#ddbt').addClass('btn__payment--active');
 		$('#directDebit').addClass('active');
@@ -66,6 +67,37 @@ $(function() {
 		$('#ddbt').removeClass('btn__payment--active');
 		$('#card').removeClass('btn__payment--active');
 	});
+
+	// About Us ribbon sections
+	$('#tabs').tabs({
+      collapsible: true, 
+      active: false
+    });
+    // Adding active and inactive class
+    $('#cfi').click(function(){
+    	$('#cfi').addClass('about__active');
+    	$('#oo').removeClass('about__active');
+    	$('#oc').removeClass('about__active');
+    	$('#op').removeClass('about__active');
+    });
+    $('#oo').click(function(){
+    	$('#oo').addClass('about__active');
+    	$('#oc').removeClass('about__active');
+    	$('#op').removeClass('about__active');
+    	$('#cfi').removeClass('about__active');
+    });
+    $('#oc').click(function(){
+    	$('#oc').addClass('about__active');
+    	$('#oo').removeClass('about__active');
+    	$('#op').removeClass('about__active');
+    	$('#cfi').removeClass('about__active');
+    });
+    $('#op').click(function(){
+    	$('#op').addClass('about__active');
+    	$('#oo').removeClass('about__active');
+    	$('#oc').removeClass('about__active');
+    	$('#cfi').removeClass('about__active');
+    });
 });
 
 // Function for submit button on the join us page, Get the modal
