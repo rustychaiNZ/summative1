@@ -165,7 +165,6 @@
   		display: block;
   	}
   	.gallery__resize{
-  		margin: 25px;
   		border-radius: 15px;
   		box-shadow: $galleryShadow;
   	}
@@ -178,9 +177,31 @@
   		box-shadow: $sectionShadow;
   	}
 
+  	// Automatic gallery
+	
+
 }
 @media only screen and (min-width: 1500px) {
 	#desktop{
 		margin-left: 0.5*$dPad;
+	}
+	.carousel__gallery--img{
+		height: 60vh;
+
+		#carouselImg1{
+			height: 60vh;
+		}
+		#carouselImg2{
+			height: 60vh;
+		}
+		#carouselImg3{
+			height: 60vh;
+		}
+		#carouselImg4{
+			height: 60vh;
+		}
+		#carouselImg5{
+			height: 60vh;
+		}
 	}
 }

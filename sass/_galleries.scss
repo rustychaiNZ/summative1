@@ -1,0 +1,92 @@
+// Flexbox gallery
+.gallery__resize{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  	margin: 25px;
+	background: $fontLight;
+}
+.column{
+	flex: 100%;
+	max-width: 100%;
+	padding: 0.25*$dPad;
+
+	img{
+		vertical-align: middle;
+		margin-top: 8px;
+		width: $spancol;
+		border: 10px solid $primaryColor;
+	}
+}
+.column__mobile{
+	display: none;
+}
+.column__tablet{
+	display: none;
+}
+
+// Automatic gallery
+.carousel__gallery{
+	margin: $dMar auto;
+	width: $spancol;
+	height: auto;
+	overflow: auto;
+	z-index: 1;
+	position: relative;
+}
+.carousel__link{
+	width: 10*$col;
+	background: $fontLight;
+	// opacity: 0.25;
+	color: $fontDark;
+	position: absolute;
+	bottom: -20%;
+	border-radius: 15px;
+	margin: auto;
+	left: 0;
+	right: 0;
+}
+.carousel__gallery--img{
+	display: none;
+	width: 11*$col;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	height: auto;
+
+	#carouselImg1{
+		@include div-background(url("../assets/carouselGallery/img1.jpg"), cover, center, no-repeat);
+		height: $galleryCarHeight;
+	}
+	#carouselImg2{
+		@include div-background(url("../assets/carouselGallery/img2.jpg"), cover, center, no-repeat);
+		height: $galleryCarHeight;
+	}
+	#carouselImg3{
+		@include div-background(url("../assets/carouselGallery/img3.jpg"), cover, center, no-repeat);
+		height: $galleryCarHeight;
+	}
+	#carouselImg4{
+		@include div-background(url("../assets/carouselGallery/img4.jpg"), cover, center, no-repeat);
+		height: $galleryCarHeight;
+	}
+	#carouselImg5{
+		@include div-background(url("../assets/carouselGallery/img5.jpg"), cover, center, no-repeat);
+		height: $galleryCarHeight;
+	}
+}
+.fade{
+	-webkit-animation-name: fade;
+ 	-webkit-animation-duration: 1.5s;
+ 	animation-name: fade;
+ 	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}
