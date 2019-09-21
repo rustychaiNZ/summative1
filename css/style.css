@@ -53,7 +53,7 @@ textarea {
 
 h1 {
   font-family: "Nunito", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 1000;
   color: #fafafa;
   text-align: right;
@@ -131,8 +131,8 @@ h4 {
 
 #mobile {
   width: 66.64%;
-  max-width: 100%;
   position: absolute;
+  border-radius: 0;
   top: 0;
   box-shadow: 2px 2px 13px #404040;
 }
@@ -533,21 +533,13 @@ header {
   border: 10px solid #004f6e;
 }
 
-.column__mobile {
-  display: none;
-}
-
-.column__tablet {
-  display: none;
-}
-
 .carousel__gallery {
-  margin: 4% auto;
   width: 100%;
   height: auto;
-  overflow: auto;
   z-index: 1;
   position: relative;
+  min-height: 500px;
+  margin-bottom: 4%;
 }
 
 .carousel__link {
@@ -555,11 +547,15 @@ header {
   background: #fafafa;
   color: #303030;
   position: absolute;
-  bottom: -20%;
   border-radius: 15px;
-  margin: auto;
+  margin: 0 auto;
   left: 0;
+  bottom: -10px;
   right: 0;
+  z-index: 2;
+}
+.carousel__link p {
+  text-align: center;
 }
 
 .carousel__gallery--img {
@@ -576,6 +572,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 50vh;
+  min-height: 400px;
 }
 .carousel__gallery--img #carouselImg2 {
   background-image: url("../assets/carouselGallery/img2.jpg");
@@ -583,6 +580,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 50vh;
+  min-height: 400px;
 }
 .carousel__gallery--img #carouselImg3 {
   background-image: url("../assets/carouselGallery/img3.jpg");
@@ -590,6 +588,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 50vh;
+  min-height: 400px;
 }
 .carousel__gallery--img #carouselImg4 {
   background-image: url("../assets/carouselGallery/img4.jpg");
@@ -597,6 +596,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 50vh;
+  min-height: 400px;
 }
 .carousel__gallery--img #carouselImg5 {
   background-image: url("../assets/carouselGallery/img5.jpg");
@@ -604,6 +604,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   height: 50vh;
+  min-height: 400px;
 }
 
 .fade {
@@ -959,8 +960,18 @@ header {
     max-width: 49.98%;
   }
 
+  .column__tablet {
+    flex: 100%;
+    max-width: 100%;
+  }
+
   .column__mobile {
     display: block;
+  }
+
+  .carousel__link {
+    width: 58.31%;
+    bottom: -30px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -1058,7 +1069,8 @@ header {
   }
 
   .column__tablet {
-    display: block;
+    flex: 33.32%;
+    max-width: 33.32%;
   }
 
   .gallery__resize {

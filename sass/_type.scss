@@ -15,7 +15,7 @@ textarea{
 	@include text-style($emphasisFont, 1.1em, 100, $fontDark)
 }
 h1{
-	@include text-style($headingFont, 1.5em, 1000, $fontLight);
+	@include text-style($headingFont, 1.3em, 1000, $fontLight);
 	text-align: right;
 }
 h2{

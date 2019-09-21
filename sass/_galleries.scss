@@ -19,21 +19,15 @@
 		border: 10px solid $primaryColor;
 	}
 }
-.column__mobile{
-	display: none;
-}
-.column__tablet{
-	display: none;
-}
 
 // Automatic gallery
 .carousel__gallery{
-	margin: $dMar auto;
 	width: $spancol;
 	height: auto;
-	overflow: auto;
 	z-index: 1;
 	position: relative;
+	min-height: 500px;
+	margin-bottom: 4%;
 }
 .carousel__link{
 	width: 10*$col;
@@ -41,11 +35,16 @@
 	// opacity: 0.25;
 	color: $fontDark;
 	position: absolute;
-	bottom: -20%;
 	border-radius: 15px;
-	margin: auto;
+	margin: 0 auto;
 	left: 0;
+	bottom: -10px;
 	right: 0;
+	z-index: 2;
+
+	p{
+		text-align: center;
+	}
 }
 .carousel__gallery--img{
 	display: none;
@@ -54,26 +53,32 @@
 	margin-right: auto;
 	margin-bottom: 10px;
 	height: auto;
+	// min-height: 500px;
 
 	#carouselImg1{
 		@include div-background(url("../assets/carouselGallery/img1.jpg"), cover, center, no-repeat);
 		height: $galleryCarHeight;
+		min-height: 400px;
 	}
 	#carouselImg2{
 		@include div-background(url("../assets/carouselGallery/img2.jpg"), cover, center, no-repeat);
 		height: $galleryCarHeight;
+		min-height: 400px;
 	}
 	#carouselImg3{
 		@include div-background(url("../assets/carouselGallery/img3.jpg"), cover, center, no-repeat);
 		height: $galleryCarHeight;
+		min-height: 400px;
 	}
 	#carouselImg4{
 		@include div-background(url("../assets/carouselGallery/img4.jpg"), cover, center, no-repeat);
 		height: $galleryCarHeight;
+		min-height: 400px;
 	}
 	#carouselImg5{
 		@include div-background(url("../assets/carouselGallery/img5.jpg"), cover, center, no-repeat);
 		height: $galleryCarHeight;
+		min-height: 400px;
 	}
 }
 .fade{

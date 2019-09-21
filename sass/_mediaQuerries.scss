@@ -1,7 +1,5 @@
 // Tablet mode
 @media only screen and (min-width: 768px) {
-	
-	
 	.article__container{
 		width: 5.5*$col;
 	}
@@ -69,8 +67,21 @@
   	  flex: 6*$col;
   	  max-width: 6*$col;
   	}
+  	.column__tablet{
+  		flex: $spancol;
+  		max-width: $spancol;
+  	}
 	.column__mobile{
 		display: block;
+	}
+
+	// Carousel Gallery
+	.carousel__gallery{
+		
+	}
+	.carousel__link{
+		width: 7*$col;
+		bottom: -30px;
 	}
 
 
@@ -162,7 +173,8 @@
   	  max-width: 4*$col;
   	}
   	.column__tablet{
-  		display: block;
+  		flex: 4*$col;
+  		max-width: 4*$col;
   	}
   	.gallery__resize{
   		border-radius: 15px;

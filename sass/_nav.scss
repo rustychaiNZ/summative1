@@ -56,8 +56,8 @@
 #mobile{
 	@extend #desktop;
 	width: 8*$col;
-	max-width: 100%;
 	position: absolute;
+	border-radius: 0;
 	top: 0;
 	box-shadow: $navShadow;
 
