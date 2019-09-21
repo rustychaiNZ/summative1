@@ -19,7 +19,7 @@ h1{
 	text-align: right;
 }
 h2{
-	@include text-style($headingFont, 1.8em, 1000, $fontDark);
+	@include text-style($headingFont, 1.6em, 1000, $fontDark);
 	padding: 0 $dPad;
 }
 h3{

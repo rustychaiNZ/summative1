@@ -61,7 +61,7 @@ h1 {
 
 h2 {
   font-family: "Nunito", sans-serif;
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: 1000;
   color: #303030;
   padding: 0 4%;
@@ -111,8 +111,7 @@ h4 {
 #desktop .nav__active li, #mobile .nav__active li {
   background-color: #fafafa;
 }
-#desktop .nav__active li.index, #mobile .nav__active li.index {
-  background-color: #fafafa;
+#desktop .nav__active .index, #mobile .nav__active .index {
   border-radius: 10px 10px 0 0;
 }
 #desktop ul a, #mobile ul a {
@@ -171,16 +170,22 @@ h4 {
 }
 
 .page {
-  min-height: 100vh;
   width: 100%;
-  background: #62c3d9;
-  clear: both;
+  min-height: 100vh;
 }
 
 .page:after {
   clear: both;
   content: "";
   display: table;
+}
+
+.page__container:after {
+  content: '';
+  width: 100%;
+  opacity: 0.8;
+  background: #62c3d9;
+  width: 100%;
 }
 
 header {
@@ -202,6 +207,7 @@ header {
   align-items: center;
   align-content: stretch;
   margin-right: auto;
+  box-shadow: 4px 4px 10px #404040;
 }
 .section a {
   color: #ffbb00;
@@ -973,6 +979,10 @@ header {
     width: 58.31%;
     bottom: -30px;
   }
+
+  .carousel__link:hover {
+    box-shadow: 2px 1px 10px #3d3d3d;
+  }
 }
 @media only screen and (min-width: 1024px) {
   header {
@@ -986,6 +996,13 @@ header {
 
   input {
     font-size: 1.5em;
+  }
+
+  .page {
+    background-image: url(../assets/siteBackground/img5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .section__articles {

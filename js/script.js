@@ -100,10 +100,37 @@ $(function() {
     });
 });
 
+// Function for submit button on the join us page, Get the modal
+$(function (){
+	var modal = document.getElementById('confirmation');
+	
+	// Get the button that opens the modal
+	var btn = document.getElementById('submit');
+	
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+	
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+  	if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+});
+
 // Carousel Slide show - Automatic slider
 var slideIndex = 0;
 showSlides();
-
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("carousel__gallery--img");
@@ -117,28 +144,5 @@ function showSlides() {
   setTimeout(showSlides, 2500); // Change image every 5 seconds
 }
 
-// Function for submit button on the join us page, Get the modal
-var modal = document.getElementById('confirmation');
 
-// Get the button that opens the modal
-var btn = document.getElementById('submit');
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}

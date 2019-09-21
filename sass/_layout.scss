@@ -1,15 +1,26 @@
 // Sections
 .page{
-	min-height: 100vh;
-	width: 100%;
+	width: $spancol;
 	// overflow: auto;
-	background: $siteBack;
-	clear: both;
+	min-height: 100vh;
 }
+// .page__container{
+// 	width: $spancol;
+// 	position:absolute;
+// 	z-index: 4;
+// 	// background-color-opacity: 0.1;
+// }
 .page:after{
 	clear: both; 
   	content: "";
   	display: table;
+}
+.page__container:after{
+	content:'';
+	width: $spancol;
+	opacity: 0.8;
+	background: $siteBackgroundColor;
+	width: $spancol;
 }
 
 header{
@@ -30,6 +41,7 @@ header{
 	align-items: center;
 	align-content: stretch;
 	margin-right: auto;
+	box-shadow: $shadow;
 
 	a{
 		color: $linkColor;

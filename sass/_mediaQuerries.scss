@@ -83,6 +83,9 @@
 		width: 7*$col;
 		bottom: -30px;
 	}
+	.carousel__link:hover{
+		box-shadow: $sectionShadow;
+	}
 
 
 }
@@ -100,6 +103,9 @@
 		font-size: 1.5em;
 	}
 
+	.page{
+		@include div-background($siteBack, cover, center, no-repeat);
+	}
 	.section__articles{
 		max-width: 1150px;
 		margin-left: auto;
